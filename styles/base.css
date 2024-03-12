@@ -29,6 +29,10 @@ main {
     gap: 1rem;
 }
 
+main section ul{
+    list-style: none;
+}
+
 /* main h1 {
     text-align: center;
     text-decoration:underline;
@@ -42,8 +46,12 @@ h2 {
     /* border-radius: 10px;   */
 }
 
+nav {
+    background-color: bisque;
+}
 nav ul{
     list-style: none; /*removes bullet points*/
+    
 }
 
 nav a {
@@ -56,6 +64,13 @@ nav a {
     border-radius: 10px;
     overflow: hidden;
     margin: 1rem 0;
+    padding: 1rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #d6abe9;
 }
 
 .lato-regular {
