@@ -9,41 +9,49 @@
     <meta name="author" content="Angela Murray">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="scripts/getDates.js">
+
    
 </head>
 <body>
     <header>
         <img src="images/profile.jpg" alt="Angela Murray" height="240" width="185">
+        <span>Angela Murray</span>
     </header>
     <nav>
-        <a href="http://">Home</a>
-        <a href="http://">Chamber</a>
-        <a href="http://">Site Plan</a>
-        <a href="http://">Form</a>
+        <ul>
+            <li><a href="http://">Home</a></li>
+            <li><a href="http://">Chamber</a></li>
+            <li><a href="http://">Site Plan</a></li>
+            <li><a href="http://">Form</a></li>
+        </ul>
     </nav>
     <main>
         <h1>WDD 230: Web Frontend Development</h1>
         <section class="card">
             <h2>Learning Activities</h2>
             <ul>
-                <li>1</li><a href=""></a>
-                <li>2</li><a href=""></a>
-                <li>3</li><a href=""></a>
-                <li>4</li><a href=""></a>
-                <li>5</li><a href=""></a>
-                <li>6</li><a href=""></a>
-                <li>7</li><a href=""></a>
+                <li>Week 01:</li><a href=""></a>
+                <li>Week 02</li><a href=""></a>
+                <li>Week 03</li><a href=""></a>
+                <li>Week 04</li><a href=""></a>
+                <li>Week 05</li><a href=""></a>
+                <li>Week 06</li><a href=""></a>
             </ul>
         </section>
         <section class="card">
             <h2>Information </h2>
             <p>Weather: Raining</p>
             <p>Visits: 2</p>
+            <p></p>
         </section>
     </main>
     <footer>
-
+        <!-- <p>&copy; <span id="year"></span> &bull; Angela Murray &bull; Virginia</p>fix year  -->
+        
+        <p>&copy; <span id="currentYear"></span> | Angela Murray | Virginia, USA</p>
+        <p >Last Modified <span id="lastModified"></span></p>
     </footer>
-    
+    <script src="scripts/getDates.js"></script>
 </body>
 </html>
