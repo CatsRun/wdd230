@@ -119,4 +119,8 @@ footer {
 	font-family:"Great Vibes", serif;
     /* change the font family here ^ */
 }
-  
+
+iframe {
+    justify-content: center; 
+    /* fix this */
+}
