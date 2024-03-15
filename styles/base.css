@@ -1,4 +1,5 @@
 /* this is my main css file */
+/* add @import url google font here */
 
 header, nav, main, footer {
     max-width: 640px;
@@ -14,6 +15,7 @@ header {
     padding: 2rem;
     font-size: 3rem;
     color: black;
+    width: 100%;
 }
 
 header span {
@@ -85,5 +87,36 @@ footer {
     font-style: italic;
   }
   
-  
+.hero {
+	margin: 10px auto;
+	position: relative;
+	border: 1px solid rgba(0,0,0,.1);
+	height: auto;
+}
+
+.hero img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.herolabel {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	background: radial-gradient(#fff, #4D5B97);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 1.5rem;
+	font-family:"Great Vibes", serif;
+    /* change the font family here ^ */
+}
   

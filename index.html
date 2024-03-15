@@ -13,12 +13,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rubik:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="images/temple-oakland-small.webp">
+    <link rel="stylesheet" href="images/temple-oakland-large.webp">
 
    
 </head>
 <body>
     <header>
-        <img src="images/profile.jpg" alt="Angela Murray" height="240" width="185">
+        <picture>
+            <img src="images/profile.webp" alt="Angela Murray" lang="lazy" height="240" width="185">
+        </picture>                  
         <span>Angela Murray</span>
     </header>
     <nav>
@@ -29,7 +33,15 @@
             <li><a href="#">Home</a></li>
         </ul>
     </nav>
-    <main>
+    <main>                 
+        <div class="hero">
+            <picture>
+                <!-- changes picture depending upon the size of the window -->
+                <source srcset="images/temple-oakland-small.webp"  media="(max-width: 500px)" loaing="lazy" width="600" height="400">
+                <img src="images/temple-oakland-large.webp" alt="Oakland, California Temple" loading="lazy" width="600" height="400">
+            </picture>
+            <div class="herolabel">Oakland California Temple</div>
+        </div>
         <h1>WDD 230: Web Frontend Development</h1>
         <section class="card">
             <h2>Learning Activities</h2>
@@ -49,6 +61,7 @@
             <p>Visits: 2</p>
         </section>
     </main>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50108.02988655276!2d-77.23155768769013!3d38.28524439630646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7200e6c4ada37%3A0x515f5c89e7162bcd!2sKing%20George%2C%20VA%2022485!5e0!3m2!1sen!2sus!4v1710431016710!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
         <!-- <p>&copy; <span id="year"></span> &bull; Angela Murray &bull; Virginia</p>fix year  -->
         

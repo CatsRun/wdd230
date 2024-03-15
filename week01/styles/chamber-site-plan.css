@@ -1,0 +1,29 @@
+@import url();....
+header{
+    background-color: #004ba8;    
+    color: #ede731;
+}
+
+main {
+    background-color: #aed3fd;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+.desktop{
+    width: 460px;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center; */
+}
+
+figure{
+    width: 460px;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center; */
+}
+
+    /* color: #0eb1d2;
+    color: #4a525a; */
