@@ -1,3 +1,7 @@
+body {
+    font-family: lato, Courier,monospace;
+    /* font-family:   ; */
+}
 header, nav, main, footer {
     max-width: 640px;
     margin: 1rem auto;
