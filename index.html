@@ -12,15 +12,14 @@
     <!-- <link rel="stylesheet" href="scripts/getDates.js"> -->
     <!-- <script type="text/javascript" src="scripts/getDates.js"></script> -->
     <link rel="icon" href="favicon.ico">
-    <script src="scripts/getDates.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rubik:ital@0;1&display=swap" rel="stylesheet">
     <meta property="og:title" content="Chamber of Commerce for King George, Virginia">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="C:\Users\Einna\OneDrive\BYUI\wdd230\wdd230\images\king-george-pic.webp"> 
-    <!--is the photo one already on the beb? -->
-    
+    <meta property="og:image" content="https://bloximages.chicago2.vip.townnews.com/fredericksburg.com/content/tncms/assets/v3/editorial/3/f3/3f31b8ff-1749-5a99-a61c-abfb698acd0f/6172df132ecc3.image.jpg?crop=1567%2C823%2C0%2C120&resize=1200%2C630&order=crop%2Cresize"> 
+     
     
     
 </head>
@@ -31,12 +30,15 @@
         </picture>                  
         <span>Angela Murray</span>
     </header>
+    
     <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
+        <a id="menu"></a>   
+        <!-- <button id="hamButton"></button> -->
+        <ul class="navigation">
+            <li><a class="active" href="#">Home</a></li>
             <li><a href="#">Chamber</a></li>
             <li><a href="#">Site Plan</a></li>
-            <li><a href="#">Form</a></li>
+            <li><a href="form.html">Form</a></li>
         </ul>
     </nav>
     <main>                 
@@ -53,11 +55,11 @@
             <h2>Learning Activities</h2>
             <ul>
                 <li>Week 01:<a href="week01/chamber-site-plan.html">Chamber Site plan</a></li>
-                <li>Week 02:<a href="#"></a>tbd1</li>
-                <li>Week 03:<a href="#"></a>tbd2</li>
-                <li>Week 04:<a href="#"></a>tbd3</li>
-                <li>Week 05:<a href="#"></a>tbd4</li>
-                <li>Week 06:<a href="#"></a>tbd5</li>
+                <li>Week 02:<a href="https://codepen.io/CatsRun/pen/jORBwQb">Hamburger Menu</a></li>
+                <li>Week 03:<a href="#"></a></li>
+                <li>Week 04:<a href="#"></a></li>
+                <li>Week 05:<a href="#"></a></li>
+                <li>Week 06:<a href="#"></a></li>
             </ul>
         </section>
         <section class="card">
@@ -71,9 +73,11 @@
     <footer>
         <!-- <p>&copy; <span id="year"></span> &bull; Angela Murray &bull; Virginia</p>fix year  -->
         
-        <p>&copy; <span id="currentYear"></span> | Angela Murray | Virginia, USA</p>
-        <p >Last Modified <span id="lastModified"></span></p>
+        <p>&copy; <span id="currentYear"></span> | Angela Murray | Virginia, USA | </p>
+        <p > Last Modified <span id="lastModified"></span></p>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburgerMenu.js"></script>
 </body>
 </html>

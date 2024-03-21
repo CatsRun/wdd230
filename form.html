@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angela Murray - WDD 230 - Web Frontend Development - form</title>
+    <meta name="description" content="WDD 230 Web Frontend Development by Angela Murray: Form">
+    <meta name="author" content="Angela Murray">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js"></script>
+    
+</head>
+<body>
+    <header>
+        <picture>
+            <img src="images/profile.webp" alt="Angela Murray" loading="lazy" height="240" width="185">
+        </picture>                  
+        <span>Angela Murray</span>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form>
+            <fieldset>
+                <legend>fill here</legend> 
+                <div class="form-item">
+                    <label for="username">User Name:</label>
+                    <input type="text" id="username" name="username">
+                    <!-- how to add required? ^^^ -->
+                </div>
+                <div class="form-item">
+                    <label for="userpasswod">Password:</label>
+                    <input type="password" id="userpasswod" name="userpasswod">
+                    <!-- add: required, min char length -->
+                </div>
+                <div class="form-item">
+                   <label for="conf-password">Confirm Password</label> 
+                   <input type="password" id="conf-password" name="conf-password">
+                    <!-- add: must match 1st password, if not, show msg... more step 3  -->
+                </div>
+                <div class="form-item">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail">
+                    <!-- add: requried, more... -->
+                </div>
+                <div class="form-item">
+                    <label for="r">Page Rating:</label>
+                    <div id="rangevalue">0</div>
+                    <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
+                    <datalist id="rangevalues">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist>
+                    <!-- more... -->
+                </div>
+
+                
+<!--                 
+                <div class="stars">
+                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                </div>
+                <div class="ref"><a href="https://codepen.io/nevkatz/pen/OJPBBpL" target="_blank">Star Rating Source Pen</a></div> -->
+<!-- add star rating here????? ^^^ -->
+
+
+
+                <button type="submit">Submit Form</button>
+            </fieldset>
+        </form>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Angela Murray | Virginia, USA</p>
+        <p >Last Modified <span id="lastModified"></span></p>
+    </footer>
+    
+</body>
+</html>

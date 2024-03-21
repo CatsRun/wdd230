@@ -1,13 +1,19 @@
 /* this is my main css file */
 /* add @import url google font here */
 
-/* body {
+body {
     font-family: lato, Courier,monospace;
-} */
-header, nav, main, footer {
+}
+
+/* header, nav, main, footer {
     max-width: 640px;
-    margin: 1rem auto;
-    padding: 1rem;
+    margin: 0;
+    padding: 0;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -15,10 +21,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     padding: 2rem;
     font-size: 3rem;
     color: black;
-    width: 100%;
+    /* width: 100%;  this caused problems with header and h1 being too wide*/
+    font-family: lato Impact;
 }
 
 header span {
@@ -38,29 +46,34 @@ main section ul{
     list-style: none;
 }
 
-/* main h1 {
+ h1 {
     text-align: center;
     text-decoration:underline;
-    grid-column: 1/3;    
-    background-color: #abb6e9;
+    /* grid-column: 1/3;     */
     margin: 1rem;
-} */
+}
 
 h2 {
     background-color: #abb6e9;
+    /* margin: 1rem; */
     /* border-radius: 10px;   */
+    text-align: center;
+    padding: .5rem;
+    /* width: 100%; */
 }
 
 nav {
     background-color: bisque;
+    padding: 3rem 1rem ;
 }
-nav ul{
-    list-style: none; /*removes bullet points*/
+/* nav ul{
+    list-style: none; removes bullet points
     
-}
+} */
 
 nav a {
-    display: block; /* changed display from horizontal to vertical. In large.css it is changed to flex which changes it to horizontal */
+    display: block; 
+    /* changed display from horizontal to vertical. In large.css it is changed to flex which changes it to horizontal */
     
 }
 
@@ -95,6 +108,7 @@ footer {
 	position: relative;
 	border: 1px solid rgba(0,0,0,.1);
 	height: auto;
+    width: 100%;
 }
 
 .hero img {
@@ -114,16 +128,83 @@ footer {
 	opacity: 0.75;
 }
 
-.herolabel p {
+.herolabel  {
 	margin: 0;
-	padding: .25rem;
+	/* padding: .25rem; */
 	font-weight: 700;
-	font-size: 1.5rem;
+	/* font-size: 1.5rem; */
 	font-family:"Great Vibes", serif;
     /* change the font family here ^ */
 }
 
 iframe {
-    justify-content: center; 
+    width: 100%; 
     /* fix this */
 }
+
+.active {
+    background-color: rgba(199, 117, 10, 0.459);
+}
+
+/* break here............ */
+#menu {
+    display: block;
+	font-size: 2rem;
+	border: 0;
+	background: none;
+	color: #000;
+ 	position: absolute;
+	/* top: 1rem;
+	right: 1rem; */
+    
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	/* background-color: #333; */
+	/* color: #fff; */
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	/* color: #fff; */
+}
+.navigation a:hover {
+	background-color: #cf9c6a;
+	color: #333231;
+	font-weight: 700;
+}
+
+.navigation li {
+    display: block;
+    flex: 100%;
+}
+.open a {
+	display: block;
+}
+
+.active::before {
+	content: "";  /* just a wayfinding symbol for the user */
+}
+
+/* .stuff {
+	margin: .5rem;
+	border: 1px solid rgba(0,0,0,.1);
+	background-color: #bed;
+	max-width: 580px;
+	height: 100vh;
+	
+} */
