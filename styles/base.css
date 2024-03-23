@@ -53,7 +53,7 @@ main section ul{
 }
 
 h2 {
-    background-color: #abb6e9;
+    /* background-color: #abb6e9; */
     /* margin: 1rem; */
     /* border-radius: 10px;   */
     text-align: center;
@@ -63,6 +63,7 @@ h2 {
 
 nav {
     background-color: bisque;
+    color: #000;
     padding: 3rem 1rem ;
 }
 /* nav ul{
@@ -120,7 +121,7 @@ footer {
 	position: absolute;
 	top: 30px;
 	left: 30px;
-	background: radial-gradient(#fff, #4D5B97);
+	background: radial-gradient(#fff, #38426d);
 	border: 1px solid rgba(0,0,0,.75);
 	padding: 1.5rem;
 	box-shadow: 0 0 3rem #fff;
@@ -142,7 +143,7 @@ iframe {
 }
 
 .active {
-    background-color: rgba(199, 117, 10, 0.459);
+    background-color: rgba(208, 204, 170, 0.812);
 }
 
 /* break here............ */
@@ -207,3 +208,19 @@ iframe {
 	height: 100vh;
 	
 } */
+
+
+/* dark mode */
+* {
+	box-sizing: border-box;
+}
+
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+}
+
