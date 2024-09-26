@@ -39,7 +39,7 @@ main section ul{
     list-style: none;
 }
 
- h1 {
+h1 {
     text-align: center;
     text-decoration:underline;
     /* grid-column: 1/3;     */
