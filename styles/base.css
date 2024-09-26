@@ -152,13 +152,13 @@ iframe {
 }
 
 /* makes a hamberger menu */
-/* #menu::before {
+#menu::before {
 	content: "☰";
 }
 
 #menu.open::before {
 	content: "X";
-} */
+}
 
 .navigation {
 	display: flex;
