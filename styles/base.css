@@ -122,9 +122,9 @@ footer {
 .herolabel  {
 	margin: 0;
 	/* padding: .25rem; */
-	font-weight: 700;
-	/* font-size: 1.5rem; */
-	font-family:"Great Vibes", serif;
+	/* font-weight: 700; */
+	/* font-size: .5rem; */
+	/* font-family:"Great Vibes", serif; */
     /* change the font family here ^ */
 }
 
@@ -169,13 +169,14 @@ iframe {
 }
 
 .navigation a {
-	display: none;
+	display: block;
 	padding: 1rem;
 	text-align: center;
 	text-decoration: none;
 	/* color: #fff; */
 }
 .navigation a:hover {
+    border: #333231;
 	background-color: #cf9c6a;
 	color: #333231;
 	font-weight: 700;
@@ -183,7 +184,7 @@ iframe {
 
 .navigation li {
     display: block;
-    flex: 100%;
+    /* flex: 100%; */
 }
 .open a {
 	display: block;
