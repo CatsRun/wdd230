@@ -5,10 +5,10 @@ body {
 }
 /* phone or baseline views **************************/
 main {
-	max-width: 767px;
+	/* max-width: 760px; */
 	margin: 0 auto;
 	display: grid;
-	grid-template-columns: 1fr;
+    grid-template-columns: 1fr ;
 	font-size: 0.8rem;
 }
 
@@ -27,7 +27,7 @@ main section h2 {
 
 
 
-main section:nth-child(2) {
+main section:nth-child(4) {
 	display: none;
 	margin: 0.5rem;
 }
@@ -36,6 +36,9 @@ main section:nth-child(2) {
 	box-shadow: 0 0 30px #333;
 }
 
-
+main h2 {
+	text-align: left;
+    grid-column: 1/3;
+}
 
 
