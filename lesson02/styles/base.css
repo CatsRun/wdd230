@@ -11,7 +11,7 @@ main {
 	display: grid;
     grid-template-columns: 1fr;
 	font-size: 0.8rem;
-}
+} 
 
 main section {
 	margin: 0.5rem;
@@ -29,6 +29,7 @@ main section h2 {
 	margin-left: 0%;
 	column-fill: auto;
 	padding: 1rem;
+	/* how do I get the boxes to fill the top? */
 }
 
 main section:nth-child(4) {
