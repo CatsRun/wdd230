@@ -16,8 +16,8 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: 2rem;
-    font-size: 3rem;
+    padding: .5rem;
+    font-size: 2rem;
     color: black;
     /* width: 100%;  this caused problems with header and h1 being too wide*/
     font-family: lato Impact;
@@ -28,8 +28,8 @@ header span {
 }
 
 main {
-    display: grid;    
-    grid-template-columns: 1fr;
+    /* display: grid;    
+    grid-template-columns: 1fr; */
     /* margin: 0 auto;  
     text-align: left;  */
     border: #d6abe938;
@@ -219,4 +219,14 @@ iframe {
 	cursor: pointer;
 	font-size: 2rem;
 }
+
+/* codepen work */
+/* a:link {
+    color: navy;
+}
+
+a:visited{
+    color: navy;
+} */
+
 
