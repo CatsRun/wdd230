@@ -1,0 +1,22 @@
+body {
+    font-family: lato, Courier,monospace;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    /* background-color: #f770ce; */    
+    background-color: #D4BDDD;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: .5rem;
+    font-size: 1em;
+    color: black;
+    /* width: 100%;  this caused problems with header and h1 being too wide*/
+    font-family: lato Impact;
+}
