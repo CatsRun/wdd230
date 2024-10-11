@@ -12,13 +12,12 @@ body {
 header {
     /* background-color: #f770ce; */    
     background-color: #D4BDDD;
-    display: flex;
-    
+    display: flex;    
     align-items: center;
     justify-content: center;
     position: relative;
     padding: .5rem;
-    font-size: 2rem;
+    font-size: 1em;
     color: black;
     /* width: 100%;  this caused problems with header and h1 being too wide*/
     font-family: lato Impact;
@@ -88,8 +87,8 @@ footer {
     justify-content: center;
     /* background-color: #d6abe9; */
     background-color: #D4BDDD;
-    padding: 1.5rem;
-    /* margin: 1rem; */
+    padding: 4em;
+    /* padding-top: 6rem; */
 }
 
 .lato-regular {
@@ -104,24 +103,25 @@ footer {
     font-style: italic;
   }
   
-.hero {
+/* .hero {
 	margin: 10px auto;
 	position: relative;
 	border: 1px solid rgba(0,0,0,.1);
 	height: auto;
     width: 100%;
-}
+} */
 
-.hero img {
+/* object-fit: cover; */
+/* .hero img {
 	width: 100%;
 	height: auto;
-	/* object-fit: cover; */
-}
-
-/* img {
-	max-width: 100%;
-	height: auto;
+	
 } */
+
+img {
+	max-width: 50%;
+	height: auto;
+}
 
 .herolabel {
 	position: absolute;
@@ -145,6 +145,7 @@ footer {
 
 iframe {
     width: 100%; 
+    padding: .5rem;
     /* fix this */
 }
 
