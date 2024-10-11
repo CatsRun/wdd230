@@ -143,10 +143,12 @@ img {
     /* change the font family here ^ */
 }
 
+/* do I need height and width? */
 iframe {
     width: 100%; 
+    height:auto;
     padding: .5rem;
-    /* fix this */
+    border:0;
 }
 
 .active {
@@ -233,5 +235,4 @@ iframe {
 a:visited{
     color: navy;
 } */
-
 
