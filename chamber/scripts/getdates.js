@@ -11,7 +11,7 @@ function printLastModefied(){
     let day = lastModefied.getDate(); 
     let year = lastModefied.getFullYear();
     let timeFormated = lastModefied.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12:true});
-    const dateFormated = month + 1 + "/" + day + "/" + year + " " + timeFormated;    
+    const dateFormated = month + 1 +"/" + day + "/" + year + " " + timeFormated;
     // why is my month off by 1? Adding the '+1' made it correct.
     return dateFormated;
 }
