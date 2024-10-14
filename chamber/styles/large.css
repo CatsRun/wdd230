@@ -23,10 +23,16 @@
         flex: 1 1 100%;
     } */
 
+    /* fix this */
     nav a:hover { 
         border: 1px solid;
         background-color: bisque;
     } 
+
+    /* hide hamburger button */
+    #menu {
+		display: none; 
+	}
 
 	/* .navigation a {
 		display: block;

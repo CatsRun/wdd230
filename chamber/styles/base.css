@@ -108,3 +108,23 @@ nav li {
     display: flex;
     text-decoration: none;
 }
+
+
+#menu {
+    display: block;
+	font-size: 2rem;
+	border: 0;
+	background: none;
+	color: #000;
+ 	position: absolute;
+    
+}    
+/* makes a hamberger menu */
+#menu::before {
+	content: "☰";
+    
+}
+
+#menu.open::before {
+	content: "X";
+}
