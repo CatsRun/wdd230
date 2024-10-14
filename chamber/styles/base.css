@@ -24,6 +24,9 @@ body {
 } */
 /* width: 100%;  this caused problems with header and h1 being too wide*/
 
+body {
+    background-color: beige;
+}
 
 nav, main, footer {
     max-width: 640px;
@@ -36,20 +39,20 @@ h1{
     justify-content: center;
     text-align: center;
     padding: 2rem;
-    font-size: 3rem;
+    /* font-size: 3rem; */
+    flex-grow: 2rem;
     width: 100%;
-    background-color: #004ba8;    
-    /* color: #ede731;     */
+    background-color: #003E89;   
     color: gold; 
 }
 
 main {
-    background-color: #aed3fd;
+    /* background-color: #aed3fd; */
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
     justify-content: center;
-    border-radius: 2%;
+    /* border-radius: 2%; */
     
 }
 
@@ -57,7 +60,7 @@ main {
 	margin: 10px auto;
 	position: relative;
 	/* border: 1px solid rgba(0,0,0,.1); */
-	height: auto;
+	height:  auto;
     width: 100%;
     
 }
