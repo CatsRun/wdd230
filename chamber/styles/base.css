@@ -26,10 +26,18 @@ body {
 /* width: 100%;  this caused problems with header and h1 being too wide*/
 
 
-nav, main, footer {
+nav, main {
     max-width: 640px;
     margin: 1rem auto;
     padding: 1rem;
+}
+
+footer {
+    margin: 1rem auto;
+    padding: 1rem;
+    text-align: center;
+    border-top: black;
+    border-style:groove;
 }
 h1{
     /* display: flex; */
@@ -94,7 +102,7 @@ nav {
     display: flex;
     justify-content: center;
     text-decoration: none;
-    /* display: none; */ /* add this when making large view*/    
+    /* display: none; */ /* add this when making large view*/
 }
 
 nav li {
