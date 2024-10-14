@@ -1,5 +1,6 @@
 body {
     font-family: lato, Courier,monospace;
+    background-color: beige;
 }
 
 *{
@@ -24,9 +25,6 @@ body {
 } */
 /* width: 100%;  this caused problems with header and h1 being too wide*/
 
-body {
-    background-color: beige;
-}
 
 nav, main, footer {
     max-width: 640px;
