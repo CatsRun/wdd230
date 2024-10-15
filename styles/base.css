@@ -47,7 +47,7 @@ h1 {
     margin: 1rem;
     
     /* see if this works! */
-    flex-grow: 2rem;
+    flex-grow: 2;
     
 }
 
