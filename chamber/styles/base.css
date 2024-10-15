@@ -45,7 +45,7 @@ h1{
     text-align: center;
     padding: 2rem;
     /* font-size: 3rem; */
-    flex-grow: 2rem;
+    flex-grow: 2;
     width: 100%;
     background-color: #003E89;   
     color: gold; 
