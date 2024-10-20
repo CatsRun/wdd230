@@ -37,6 +37,9 @@ footer {
     text-align: center;
     border-top: black;
     border-style:groove;
+    background-color: #003E89;
+    color: gold;
+    font-size: medium;
 }
 h1{
     /* display: flex; */
@@ -53,7 +56,7 @@ h1{
     
 }
 
-/* .hero h2 {
+/* .hero p {
     position: absolute;
     top: 100px;
     left: 0;
@@ -65,9 +68,9 @@ h1{
 
 main {
     /* background-color: #aed3fd; */
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1rem;
+    grid-gap: 1rem; */
     justify-content: center;
     /* border-radius: 2%; */
     margin: 1rem auto;
@@ -83,9 +86,24 @@ main {
     width: 100%;    
 }
 
-.hero h2 {
-    color: #000;
+/* fix this position */
+.hero button {    
+    position: absolute;
+    top: 300px;
+    left: 0;
+    right: 0;
+    color: rgb(255, 255, 255);
+    /* text-align: center; */
+    background-color: rgba(75, 75, 121, 0.7); 
+
+    margin: 1rem;
+    /* background-color: var(--primary-color);  */
+    color: #fff;
+    border: none;
+    /* padding: .75rem; */
+    font-size: .5rem;
 }
+
 /* .desktop{
     width: 300px;
     display: grid;
@@ -111,6 +129,9 @@ section {
     margin: 1rem 0;
     padding: 1rem;
     background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
 
 }
 
