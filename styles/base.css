@@ -217,7 +217,14 @@ iframe {
 * {
 	box-sizing: border-box;
 }
+/* codepen work */
+/* a:link {
+    color: navy;
+}
 
+a:visited{
+    color: navy;
+} */
 #mode {
 	position: absolute;
 	top: 1rem;
@@ -227,12 +234,5 @@ iframe {
 	font-size: 2rem;
 }
 
-/* codepen work */
-/* a:link {
-    color: navy;
-}
 
-a:visited{
-    color: navy;
-} */
 

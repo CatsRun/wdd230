@@ -48,23 +48,3 @@ button.addEventListener('click', function () {
         input.focus();
     }
 });
-
-
-// console.log (print)
-    //   const chapter = input.value;
-    // input.value = '';
-    // const listItem = document.createElement('li');
-    // const listText = document.createElement('span');
-    // const listBtn = document.createElement('button');
-
-    // listItem.appendChild(listText);
-    // listText.textContent = chapter;
-    // listItem.appendChild(listBtn);
-    // listBtn.textContent = 'Delete';
-    // list.appendChild(listItem);
-
-    // listBtn.addEventListener('click', () => {
-    //   list.removeChild(listItem);
-    // });
-
-    // input.focus();
