@@ -234,5 +234,8 @@ a:visited{
 	font-size: 2rem;
 }
 
-
+.hero image {
+    width: 100%;
+    height: auto;
+}
 
