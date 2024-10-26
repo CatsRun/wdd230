@@ -168,12 +168,52 @@ nav li {
  	position: absolute;
     
 }    
+
+
 /* makes a hamberger menu */
 #menu::before {
 	content: "☰";
     
 }
 
+
+
 #menu.open::before {
 	content: "X";
+}
+
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	/* background-color: #333; */
+	/* color: #fff; */
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	/* color: #fff; */
+}
+.navigation a:hover {
+    border: #333231;
+	background-color: #cf9c6a;
+	color: #333231;
+	font-weight: 700;
+}
+
+.navigation li {
+    display: block;
+    /* flex: 100%; */
+}
+.open a {
+	display: block;
+}
+
+/* just a wayfinding symbol for the user */
+.active::before {
+	content: "";  
 }
