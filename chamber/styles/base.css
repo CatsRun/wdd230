@@ -41,8 +41,8 @@ footer {
     border-top: black;
     border-style:groove;
     background-color: #003E89;
-    color: gold;
-    font-size: medium;
+    color: #fff;
+    font-size: 1.2rem;
 }
 h1{
     /* display: flex; */
