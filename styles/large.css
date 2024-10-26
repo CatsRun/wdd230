@@ -1,5 +1,7 @@
 /* applies to larger view */
-@media screen and (min-width: 500px){
+/* @media screen and (min-width: 500px){ */
+    /* I have to change min-width from 500 to 400 bc wk06 assignemt hero img reqired 400 */
+@media screen and (min-width: 400px){
     /* header {
         background-color: black;
         color: white;
@@ -49,12 +51,17 @@
 	}
 
     .hero {
-        grid-column: 1/3;
+        grid-column: 1/3;        
     }
 
     h2 {
         grid-column: 1/3;
     }
 
-
+/* position of lable in large view */
+    .herolable {
+        top: 380px;
+        left: 25px;
+        max-width: 960px;
+    }
 }
