@@ -20,6 +20,8 @@
 
     nav ul li {
         flex: 1 1 100%;
+        font-size: 1.3rem;
+        font-weight: bold;
     }
 
     nav a:hover { /*when curser hovers over nav a boarder in there*/
