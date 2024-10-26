@@ -178,6 +178,7 @@ nav li {
 /* makes a hamberger menu */
 #menu::before {
 	content: "☰";
+    color: goldenrod;
     
 }
 
