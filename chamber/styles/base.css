@@ -234,3 +234,28 @@ nav li {
 	font-size: 1.5rem;
 }
   
+/* for 3 img */
+
+.herolable {
+    position: absolute;
+    top: 440px;
+    left: 50px;
+    background: radial-gradient(#fff, #f39c39e0);
+    border: 1px solid rgba(23, 23, 23, 0.51);
+    padding: .5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+    font-family:"Great Vibes", serif;    
+    /* change the font family here ^ */
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+.herolable::after {
+    content: "small";
+    /* text-indent: 0; */
+    /* display: block; */
+     /* New content takes up original line height */
+    /* line-height: initial;  */
+  }

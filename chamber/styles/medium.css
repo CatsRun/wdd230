@@ -1,0 +1,11 @@
+@media screen and (min-width: 401px) {
+
+    .herolable {
+        top: 410px;
+        left: 100px;
+    }
+
+    .herolable::after {
+        content: "medium";
+      }
+}

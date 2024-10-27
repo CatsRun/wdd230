@@ -15,7 +15,8 @@
     <!-- normalize.css wk2 -->
     <link rel="stylesheet" href="styles/normalize.css">  
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/large.css">    
+    <link rel="stylesheet" href="styles/medium.css"> 
+    <link rel="stylesheet" href="styles/large.css">   
   
 </head>
 <body>
@@ -38,12 +39,20 @@
     </header>        
     <main>
         <div class="hero">
-            <picture>
+            <!-- <picture>
                 <img src="images/tulips.webp" alt="Yellow Flowers">
             </picture> 
-            <button>Join the Chamber today!</button>
-        </div>
+            <button>Join the Chamber today!</button> -->
 
+            <!-- temp img for wk06 -->
+             <picture>
+                <source media="(max-width:400px)" srcset="../lesson06/images/small.webp" >
+                <source media="(max-width:499px)" srcset="../lesson06/images/medium.webp" >
+                <!-- <source media="(min-width:500px)" srcset="../lesson06/images/large.webp" > -->
+                <img src="../lesson06/images/large.webp" alt="people in an office" width="500">
+             </picture>
+        </div>
+        <div class="herolable">This image is </div>
 
         <section>
             <h3>Current Events</h3>
