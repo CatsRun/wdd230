@@ -159,6 +159,8 @@ nav li {
     /* text-decoration: none; */
     list-style-type: none;
     margin: 10px;
+    /* stops 'about us' from wraping */
+    white-space: nowrap;
 }
 
 
