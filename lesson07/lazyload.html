@@ -6,26 +6,26 @@
     <title>Lazy Loading</title>
     <meta name="description" content="WDD 230 Web Frontend Development lazy loading">
     <meta name="author" content="Angela Murray">
-    <!-- normalize.css wk2 -->
     <link rel="stylesheet" href="../styles/normalize.css">
-    <link rel="stylesheet" href="responsive-images.css">
+    <link rel="stylesheet" href="styles/lazyload.css">
 </head>
 
 
 <body>
-    <header><h1>Lazy Loading </h1></header>
+    <header><h1>Lazy Loading Farm Animals</h1></header>
     <main>
-        <picture>
-            <img loading="lazy" src="" alt="">
-            <img loading="lazy" src="" alt="">
-            <img loading="lazy" src="" alt="">
-            <img loading="lazy" src="" alt="">
-            <img loading="lazy" src="" alt="">
+            <picture><img src="https://loremflickr.com/400/600/squirle?lock=10" alt="squirle" loading="lazy" width="400" height="600"></picture>
+            <picture><img src="https://loremflickr.com/400/600/pig?lock=09" alt="pig" loading="lazy" width="400" height="600"></picture>
+            <picture><img src="https://loremflickr.com/400/600/cow?lock=03" alt="cow" loading="lazy" width="400" height="600"></picture>
+            <picture><img src="https://loremflickr.com/400/600/horse?lock=99" alt="horse" loading="lazy" width="400" height="600"></picture>
+            <picture><img src="https://loremflickr.com/400/600/duck?lock=01" alt="duck" loading="lazy" width="400" height="600"></picture>
+            <picture><img src="https://loremflickr.com/400/600/rooster?lock=02" alt="rooster" loading="lazy" width="400" height="600"></picture>
+            
             <!--  https://pixlr.com/editor/ -->
-        </picture>
+        
     </main>
     <footer>
-        <p>&copy; <span id="currentYear"></span> | Angela Murray | Lazy Loading | </p>
+        <p>&copy; <span id="currentYear"></span> | Angela Murray | Lazy Loading | WDD 230</p>
         <p> Last Modified <span id="lastModified"></span></p>
     </footer>
     <script src="../scripts/getdates.js"></script>
