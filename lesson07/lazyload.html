@@ -16,10 +16,18 @@
     <header><h1>Lazy Loading </h1></header>
     <main>
         <picture>
-            <img src="images/hero-large.webp" alt="Richmond Temple" >
+            <img loading="lazy" src="" alt="">
+            <img loading="lazy" src="" alt="">
+            <img loading="lazy" src="" alt="">
+            <img loading="lazy" src="" alt="">
+            <img loading="lazy" src="" alt="">
             <!--  https://pixlr.com/editor/ -->
         </picture>
     </main>
-    <footer></footer>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Angela Murray | Lazy Loading | </p>
+        <p> Last Modified <span id="lastModified"></span></p>
+    </footer>
+    <script src="../scripts/getdates.js"></script>
 </body>
 </html>
