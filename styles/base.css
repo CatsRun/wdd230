@@ -247,3 +247,10 @@ a:visited{
     border-radius: 8px;
     white-space: nowrap;
 }
+
+/* visit counter */
+#visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}
