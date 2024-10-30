@@ -12,17 +12,19 @@ function doInputOutput(){
     
     output = windChill(tempF, speed);
     
-    document.getElementById("output").innerHTML = output.toFixed(1);
+    // document.getElementById("output").innerHTML = output.toFixed(1); this prevented the words from printing
+    document.getElementById("output").innerHTML = output;
 }
     
-function windChill(tempF, speed){
+function windChill(tempF, speed){0.
     let na = 'N/A';
     if (speed >= 3 && tempF < 50) {
-        return 35.74 + 0.6215 * tempF - 35.75 * speed ** 0.16 + 0.4275 * tempF * speed ** 0.16;                          
+        windChill = (35.74 + 0.6215 * tempF - 35.75 * speed ** 0.16 + 0.4275 * tempF * speed ** 0.16 ).toFixed(1);
+        return windChill;
         }
     else {
-        // output is a number. I need to change it to a string for this to work
-        return 0;
+        // output is a number. I need to change it to a string for this to work. to.Dix needs to change
+        return na;
     }
 
 }
