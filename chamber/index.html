@@ -53,58 +53,44 @@
              </picture>
         </div>
         <div class="herolable">This image is </div>
-
-        <section>
-            <h3>Current Events</h3>
-            <ul>
-                <li>Fall Festival</li>
-                <li>5K Fun Run</li>
-                <li>FAmily Fun Day</li>
-            </ul>
-        </section>
-        <section >
-            <h3>Weather</h3>
-            <!-- <p>Temperature: 50</p>
-            <p>Wind speed: 0</p>
-            <p>Wind chill: n/a</p> -->
-
-            Temperature <input type="text" id="Temperature"><br>
-            Wind-Speed  <input type="text" id="Wind-Speed"><br>
-            <!-- move button to event listener? -->
-            <button type="button" onclick="doInputOutput()">Wind Chill</button>
-            <div id="output"> </div>
-
-
-
-
-
-
-        </section>
-        <!-- <section class="scenarios">
-            <h2>Scenarios</h2>
-            <ul>
-                <li>Why visit King George?</li>
-                <li>Local Businesses</li>
-                <li>Historic Sites</li>
-                <li>Birds to see</li>
-            </ul>
-        </section> -->
-
-
-        <H2>Member Spotlight</H2>
-        <section>
-            <h3>Spotlight 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, labore.</p>
-        </section>
-        <section>
-            <h3>Spotlight 2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, labore.</p>
-        </section>
-        <section>
-            <h3>Spotlight 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, labore.</p>
-        </section>
         
+        <div class="grid-container">
+            <section class="card">
+                <h3>Current Events</h3>
+                <ul>
+                    <li>Fall Festival</li>
+                    <li>5K Fun Run</li>
+                    <li>FAmily Fun Day</li>
+                </ul>
+            </section>
+            <section class="card">
+                <h3>Weather</h3>
+                <!-- <p>Temperature: 50</p>
+                <p>Wind speed: 0</p>
+                <p>Wind chill: n/a</p> -->
+
+                Temperature <input type="text" id="Temperature"><br>
+                Wind-Speed  <input type="text" id="Wind-Speed"><br>
+                <!-- move button to event listener? -->
+                <button type="button" onclick="doInputOutput()">Wind Chill</button>
+                <div id="output"> </div>
+
+            </section>
+
+            <H2>Member Spotlight</H2>
+            <section class="card">
+                <h3>Spotlight 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, labore.</p>
+            </section>
+            <section>
+                <h3>Spotlight 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, labore.</p>
+            </section>
+            <section class="card">
+                <h3>Spotlight 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, labore.</p>
+            </section>
+        </div>
     </main>
 
     <footer>
