@@ -74,20 +74,6 @@ main {
 
 
 
-/* .desktop{
-    width: 300px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-} */
-
-/* picture{
-    width: 300px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-} */
-
 section {
     box-shadow: 0 0 10px rgb(26, 26, 23);
     border-radius: 10px;
@@ -111,11 +97,6 @@ nav {
 
     
 }
-
-/* nav ul {
-    
-    display: flex;
-} */
 
 nav li {
     /* text-decoration: none; */
@@ -223,4 +204,11 @@ nav li {
     /* display: block; */
      /* New content takes up original line height */
     /* line-height: initial;  */
+  }
+
+  .side {
+    display: grid;
+    grid-template-columns: 1fr;
+    right: 0;
+    left: 0;
   }

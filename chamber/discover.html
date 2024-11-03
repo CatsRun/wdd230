@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce</title>    
+    <meta name="description" content="WDD 230 Web Frontend Development: Chamber of Commerce">
+    <meta name="author" content="Angela Murray">
+    <link rel="icon" href="../chamber/favicon.ico">
+    <!-- social media meta tags wk2-->
+    <meta property="og:title" content="King George, Virginia Historical Society">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://kinggeorgehistory.org/gallery/nggallery/image/635056dd15eb8-image_"> 
+    <meta property="og:url" content="https://catsrun.github.io/wdd230/chamber/index.html">
+    <!-- normalize.css wk2 -->
+    <link rel="stylesheet" href="styles/normalize.css">  
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css"> 
+    <link rel="stylesheet" href="styles/large.css">   
+  
+</head>
+<body>
+
+    <header>          
+        <h1>King George Chamber of Commerce</h1>
+        <!-- why is this here? -->
+        <a id="menu"></a>            
+            <nav>            
+                <ul class="navigation">
+                    <!-- <li><a class="active" href="#">Home</a></li> -->
+                    <li><a href="../index.html">Home</a></li>            
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Info</a></li>           
+                </ul>
+            </nav>
+        <!-- dark mode, should this be here? -->
+        <div id="mode">😎</div>
+    </header>        
+    <main>
+        <div class="side-container">
+            <section class="side"><h2>First</h2>Lorem ipsum dolor sit amet.</section>
+            <section class="side"><h2>Second</h2>Lorem ipsum dolor sit amet.</section>
+            <section class="side"><h2>Third</h2>Lorem ipsum dolor sit amet.</section>
+            <section class="side"><h2>Birds in season</h2>Lorem ipsum dolor sit amet.</section>
+        </div>
+        <!-- change photos -->
+        <picture><img src="https://loremflickr.com/400/600/squirle?lock=10" alt="squirle" loading="lazy" width="400" height="600"></picture>
+        <picture><img src="https://loremflickr.com/400/600/pig?lock=09" alt="pig" loading="lazy" width="400" height="600"></picture>
+        <picture><img src="https://loremflickr.com/400/600/cow?lock=03" alt="cow" loading="lazy" width="400" height="600"></picture>
+        <picture><img src="https://loremflickr.com/400/600/horse?lock=99" alt="horse" loading="lazy" width="400" height="600"></picture>
+        <picture><img src="https://loremflickr.com/400/600/duck?lock=01" alt="duck" loading="lazy" width="400" height="600"></picture>
+        <picture><img src="https://loremflickr.com/400/600/rooster?lock=02" alt="rooster" loading="lazy" width="400" height="600"></picture>
+        
+        <!--  https://pixlr.com/editor/ -->
+        
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Angela Murray | WDD 230 Project</p>
+        <p >Contact 888-555-1234 | kgChamber.com | Terms of Service </p>
+        <p>Last Modified <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger-menu.js"></script>
+    <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>
