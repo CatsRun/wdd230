@@ -206,9 +206,18 @@ nav li {
     /* line-height: initial;  */
   }
 
-  .side {
+  .side-container {
+    position: fixed;
+  }
+  .side-container section{
     display: grid;
     grid-template-columns: 1fr;
-    right: 0;
-    left: 0;
+    /* right: 0; */
+    /* left: 0; */
+    max-width: 150px;
+  }
+
+  .discover-img {
+    justify-items: center;
+    padding-left:100px ;
   }

@@ -69,6 +69,11 @@
     h2 {
         display: none;
     }
+
+    /* this overrides wit presidence the h2 display none */
+    .side-container section h2{
+        display:inline-block;
+    }
     
     /* dark-mode location */
     #mode {
