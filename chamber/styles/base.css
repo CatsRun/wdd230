@@ -212,8 +212,6 @@ nav li {
   .side-container section{
     display: grid;
     grid-template-columns: 1fr;
-    /* right: 0; */
-    /* left: 0; */
     max-width: 150px;
   }
 
