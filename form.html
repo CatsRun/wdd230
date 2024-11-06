@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="description" content="WDD 230 Web Frontend Development by Angela Murray: Form">
+    <meta name="author" content="Angela Murray">
+    <link rel="icon" href="favicon.ico">
+    <!-- social media meta tags wk2-->
+    <meta property="og:title" content="King George, Virginia Historical Society">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://kinggeorgehistory.org/gallery/nggallery/image/635056dd15eb8-image_"> 
+    <meta property="og:url" content="https://CatsRun.github.io/wdd230"> 
+    <!-- normalize.css wk2 -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>        
+        <picture>
+            <img src="images/profile.webp" alt="Angela Murray" loading="lazy">
+            
+        </picture>    
+        <h1>Angela Murray</h1>  
+    </header>
+    <a id="menu"></a>
+    <nav>            
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>            
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="#">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></li>
+            
+        </ul>
+    </nav>
+    <main>
+        <h1>Create Your Account</h1>
+        <!-- sould the form method be 'get' because we are using Github, or 'post' because there is sensative info? -->
+        <form method="get" action="form-submit" class="user-form">
+            <fieldset>
+                <legend> New Account </legend>
+                <label>User Name* <input type="text" id="username" name="username" required></label>
+                <label>Password* <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" placeholder="at least 8 characters long " required></label>
+                <label>Password again* <input type="password" id="password2" name="password2" pattern="[a-zA-Z0-9]{8,}" placeholder="Re-enter Your Password" required></label>
+                <!-- after the pattern makes: +@byui.edu required -->
+                <label>Email* <input type="email" id="email" name="email" title="A valid byui.edu email addesss." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required></label>
+                <div id="rangevalue">How was your experiance</div>
+                    <label>Rating <input type="range" id="rating" name="rating" min="1" max="10" value="0" step="1" list="rangevalues"></label>
+                    <!-- should this be wrapped in the lable? -->
+                    <datalist id="rangevalues">
+                        <!-- <option value="0">0</option> -->
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist>
+            
+            </fieldset>
+            <!-- when choosing what to put on a submit button ask "I want to..." the answer is that you put on the button -->           
+            <input type="submit" value="Create Account">
+
+        </form>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Angela Murray | Virginia, USA | </p>
+        <p > Last Modified <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/form.js"></script>
+</body>
+</html>

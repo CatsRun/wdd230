@@ -1,0 +1,86 @@
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+/* ---------- FORM STYLING ------- */
+.user-form fieldset {
+    margin: 2rem 0;
+    border: 1 px solid #ddd;
+    /* rounds corners of boxes */
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.user-form legend {
+    color: #445ba9;
+    /* first #0 is left padding, second #.5 is right padding */
+    padding: 0 .5rem;    
+}
+
+.user-form label {
+    /* moved itemes from inline to stacked */
+    display: block;
+    padding-top: 1rem;
+    color: #110d82;
+    font-size: .9rem;
+}
+
+.user-form div {
+    padding-top: 1rem;
+    color: #445ba9;
+    font-size: .9rem;
+
+}
+/* be sure to have no spaces in input[type="text"] */
+.user-form input[type="text"],
+.user-form input[type="email"],
+.user-form select,
+.user-form input[type="password"]
+{
+    /* the red background was to be sure all of the items were selected */
+    /* background-color: red; */
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    /* change text color for what is being typed */
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    /* overrides the default browser styling */
+    appearance: none;
+}
+
+
+
+.user-form input[type='submit']{
+    border: none;
+    /* background-image: linear-gradient(green, rgb(212, 110, 31), brown); */
+    background-color:#3c3c3ccd;
+    color: white;
+    border-radius: 6px;    
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 1rem 2%;
+
+}
+
+/* adds colors to required fields and changes the color when filled in */
+.user-form input:required {
+    border-bottom: solid 6px red;
+    background-color: #9c2c1307;
+}
+
+.user-form input:required:valid {
+    border-bottom: solid 6px green;
+    background-color: rgba(0, 128, 0, 0.131);
+} 
+
+#rangevalue {
+    font-size: 18px;
+    font: bold;
+}
