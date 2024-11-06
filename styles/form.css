@@ -80,7 +80,21 @@ main {
     background-color: rgba(0, 128, 0, 0.131);
 } 
 
-#rangevalue {
-    font-size: 18px;
+#rangevalues {
+    font-size: 13px;
     font: bold;
+    display: flex;
+    width: 235px;
+	margin-bottom: 0;
+    padding-left: 2.5rem;
+}
+
+#rangevalues option {
+    flex: 1 1 auto;
+}
+
+
+
+#rating {
+    width: 180px;
 }
