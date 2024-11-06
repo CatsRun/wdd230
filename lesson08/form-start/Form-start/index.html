@@ -48,7 +48,7 @@
 <!-- CONTENT HERE -->
 <main>
     <h1>Course Proposal Application</h1>
-        <form method="get" action="thanks.html">
+        <form method="get" action="thanks.html" class="wf1">
             <fieldset>
                 <legend>Applicant Information</legend>
                 <!--fname is used becuase the webrowser can identify it and use it with auto complete.  -->
@@ -69,10 +69,10 @@
                 <label><input type="radio" name="audience" value="advanced"> Advanced</label>
 
                 <div>Software Needed</div>
-                <label><input type="checkbox" name="editing" value="yes"> Photo Editing</label>
                 <label><input type="checkbox" name="code" value="yes"> Coding </label>
-                <label><input type="checkbox" name="process" value="yes"> Preprocesspr</label>
                 <label><input type="checkbox" name="checkbox" value="yes"> FTP Client</label>
+                <label><input type="checkbox" name="editing" value="yes"> Photo Editing</label>
+                <label><input type="checkbox" name="process" value="yes"> Preprocesspr</label>
                 
             </fieldset>
 
@@ -81,15 +81,16 @@
                 <label>Anticipated Completion Date <input type="date" name="completeDate"></label>
                 <label>Course Subject
                     <select name="subject">
-                        <option value="">Please Select</option>
-                    <option value="software">Software Development</option>
-                    <option value="software">Creative Professional</option>
-                    <option value="software">Information Technology</option>
-                    <option value="software">Data Professional</option>
-                    <option value="software">Construction</option>
-                    <option value="software">Manufacturing</option>
-                    <option value="software">Business Professional</option>
-                    <option value="software">Cyber Security</option>                     
+                        <!-- &#9662; adds a down arrow -->
+                        <option value="">Please Select &#9662;</option>
+                        <option value="software">Software Development</option>
+                        <option value="software">Creative Professional</option>
+                        <option value="software">Information Technology</option>
+                        <option value="software">Data Professional</option>
+                        <option value="software">Construction</option>
+                        <option value="software">Manufacturing</option>
+                        <option value="software">Business Professional</option>
+                        <option value="software">Cyber Security</option>                     
                     </select>
                 </label>
 
