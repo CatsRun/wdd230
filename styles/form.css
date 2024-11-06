@@ -7,7 +7,7 @@ main {
 /* ---------- FORM STYLING ------- */
 .user-form fieldset {
     margin: 2rem 0;
-    border: 1 px solid #ddd;
+    border: 1px solid #ddd;
     /* rounds corners of boxes */
     border-radius: 6px;
     padding: .5rem 2%;
