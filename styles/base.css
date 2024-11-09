@@ -10,10 +10,10 @@ body {
     font-family: lato, Courier,monospace;
 }
 
-*{
+/* *{
     margin: 0;
     padding: 0;
-}
+} */
 
 header {
     /* background-color: #f770ce; */    
