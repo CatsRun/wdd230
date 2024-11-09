@@ -22,7 +22,8 @@ function checkSame() {
 		message.style.visibility = "show";
 		kp2.style.backgroundColor = "#fff0f3";
 		kp2.value = "";
-		kp2.focus();
+		// this prevented any other field from beging clicked
+		// kp2.focus();
 	} else {
 		message.style.display = "none";
 		kp2.style.backgroundColor = "#fff";
