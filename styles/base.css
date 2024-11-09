@@ -1,6 +1,9 @@
 /* this is my main css file */
 :root {
     background-color: antiquewhite;
+    color: #000;
+    padding: 0;
+    
 }
 
 body {
