@@ -36,7 +36,7 @@ main {
 /* be sure to have no spaces in input[type="text"] */
 .user-form input[type="text"],
 .user-form input[type="email"],
-.user-form select,
+/* .user-form select, */
 .user-form input[type="password"]
 {
     /* the red background was to be sure all of the items were selected */

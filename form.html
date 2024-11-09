@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/form.css">
+    l
 </head>
 <body>
     <header>        
@@ -32,20 +33,22 @@
             <li><a href="index.html">Home</a></li>            
             <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
             <li><a href="chamber/index.html">Chamber</a></li>
-            <li><a href="#">BYU-Idaho</a></li>
+            <li><a href="https://www.byui.edu/">BYU-Idaho</a></li>
             <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></li>
             
         </ul>
     </nav>
     <main>
+        <!-- <form method="get" action="form-submit.html"  ></form> -->
+        <div id="formmessage"></div>
         <h1>Create Your Account</h1>
         <!-- sould the form method be 'get' because we are using Github, or 'post' because there is sensative info? -->
-        <form method="get" action="form-submit" class="user-form">
+        <form method="get" action="form-submit.html" class="user-form">
             <fieldset>
                 <legend> New Account </legend>
                 <label>User Name* <input type="text" id="username" name="username" required></label>
                 <label>Password* <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" placeholder="at least 8 characters long " required></label>
-                <label>Password again* <input type="password" id="password2" name="password2" pattern="[a-zA-Z0-9]{8,}" placeholder="Re-enter Your Password" required></label>
+                <label>Password2* <input type="password" id="password2" name="password2" pattern="[a-zA-Z0-9]{8,}" placeholder="Re-enter Your Password" required></label>
                 <!-- after the pattern makes: +@byui.edu required -->
                 <label>Email* <input type="email" id="email" name="email" title="A valid byui.edu email addesss." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required></label>
                 <div id="rangevalue">How was your experiance</div>
