@@ -1,4 +1,7 @@
 /* this is my main css file */
+:root {
+    background-color: antiquewhite;
+}
 
 body {
     font-family: lato, Courier,monospace;
