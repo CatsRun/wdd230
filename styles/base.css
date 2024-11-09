@@ -255,3 +255,9 @@ a:visited{
 	font-size: larger;
 }
 
+.thankyou {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    padding: 2rem;
+}
