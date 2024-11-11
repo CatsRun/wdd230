@@ -65,7 +65,7 @@ main {
     color: rgb(255, 255, 255);
     /* text-align: center; */
     background-color: rgba(75, 75, 121, 0.7); 
-    max-width: 10 0px;
+    max-width: 100px;
     margin: 1rem;
     /* background-color: var(--primary-color);  */
     color: #fff;
@@ -230,3 +230,45 @@ nav li {
     text-decoration-line: underline;
 }
 /* ---------------join---------------- */
+
+
+.join-form label {
+    /* moved itemes from inline to stacked */
+    display: block;
+    padding-top: 1rem;
+    color: #110d82;
+    font-size: .9rem;
+}
+
+/* be sure to have no spaces in input[type="text"] */
+.join-form input[type="text"],
+    [type="email"],
+    [type="tel"]
+{
+    /* background-color: #eee; */
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    /* change text color for what is being typed */
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    /* overrides the default browser styling */
+    appearance: none;
+    /* background-color: red; */
+}
+
+.join-form button {
+    margin: 1rem;
+    font-size: 2rem;
+    border-radius: 6px;
+    /* background-color: blue; */
+    background-image: linear-gradient(#003e89a5, #003e89d6, #003E89);
+    color: gold;
+    /* text-decoration: underline; */
+}
+
+.join-form legend{
+    padding: 10px;
+}

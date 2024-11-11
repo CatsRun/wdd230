@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 230 Web Frontend Development: Chamber of Commerce">
+    <title>Chamber of Commerce Join</title> 
+    <meta name="description" content="WDD 230 Web Frontend Development: Chamber of Commerce Join- Recruitment page">
     <meta name="author" content="Angela Murray">
     <link rel="icon" href="../chamber/favicon.ico">
     <!-- social media meta tags wk2-->
@@ -39,42 +40,43 @@
     <main>
         <!-- need title for form h2?  -->
          <h2>Join the King Gelore Chamber of Commerce</h2>
-        <form action="get" action="thankyou.html"></form>
-        <fieldset>
-            <!-- use :root to style legend padding on r and l -->
-            <legend>Contact Information</legend>
-            <!-- do i need a div in these?  -->
-            <div></div>
-                <label>First Name* <input type="text" name="fname"  id="fname" required></label><br>
-                <label>Last Name* <input type="text" name="lname" id="lname" required></label><br>
-                <!-- add regular expression -->
-                <label>h2* <input type="text" name="h2" id="h2" pattern="[a-zA-Z- ]{7,}" required></label><br>
-                <label>Email* <input type="email" name="email" id="email" placeholder="acb123@acb.com" required></label><br>
-                <!-- check if type 'telephone' is correct -->
-                <label>Moble Number* <input type="telephone" name="moble" id="moble" required></label><br>
-            </fieldset>
+        <form method="get" action="thankyou.html"></form>
+        <div class="join-form">
             <fieldset>
-                <legend>Business/Organization Information</legend>
-                <div></div>
-                <label>Name* <input type="text" name="busname" id="busname" required></label><br>
-                <label>Description <input type="text" name="description" id="description"></label>
+                <!-- use :root to style legend padding on r and l -->
+                <legend>Contact Information</legend>
+                <!-- do i need a div in these?  -->
+                <!-- <div></div> -->
+                    <label>First Name* <input type="text" name="fname"  id="fname" required></label><br>
+                    <label>Last Name* <input type="text" name="lname" id="lname" required></label><br>
+                    <!-- add regular expression -->
+                    <label>h2* <input type="text" name="h2" id="h2" pattern="[a-zA-Z- ]{7,}" required></label><br>
+                    <label>Email* <input type="email" name="email" id="email" placeholder="abc123@acb.com" required></label><br>
+                    <label>Moble Number* <input type="tel" name="moble" id="moble" required></label><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Business/Organization Information</legend>
+                    <!-- <div></div> -->
+                    <label>Name* <input type="text" name="busname" id="busname" required></label><br>
+                    <label>Description <input type="text" name="description" id="description"></label>
 
-        </fieldset>    
+            </fieldset>    
 
-        <fieldset>
-            <legend>Membership Level</legend>
-            <div></div>
-            <!-- does this need to be required? -->
-            <label><input type="radio" name="membership" id="membership">Gold Membership </label><br>
-            <label><input type="radio" name="membership" id="membership">Silver Membership </label><br>
-            <label><input type="radio" name="membership" id="membership">Bronze Membership </label><br>
-            <!-- how to add () within the lable? (non-profit organizations, fee) -->
-            <label><input type="radio" name="membership" id="membership">NP Membership, non-profit organizations, fee </label>
-            
-            <!-- An input element of type (hidden) with a name and id. This field contains the current date/time in millisecond format Date.now(), which records the date and time that the form was loaded by the user. You must use JavaScript to set the value of this field. -->
-            <input type="hidden" name="submit-date" id="submit-date">
-        </fieldset>
-            <button type="submit">Join</button>
+            <fieldset>
+                <legend>Membership Level</legend>
+                <!-- <div></div> -->
+                <!-- does this need to be required? -->
+                <label><input type="radio" name="membership" id="gold-membership"> Gold Membership </label><br>
+                <label><input type="radio" name="membership" id="silver-membership"> Silver Membership </label><br>
+                <label><input type="radio" name="membership" id="bronze-membership"> Bronze Membership </label><br>
+                <!-- how to add () within the lable? (non-profit organizations, fee) -->
+                <label><input type="radio" name="membership" id="np-membership"> NP Membership, non-profit organizations, fee </label>
+                
+                <!-- An input element of type (hidden) with a name and id. This field contains the current date/time in millisecond format Date.now(), which records the date and time that the form was loaded by the user. You must use JavaScript to set the value of this field. -->
+                <input type="hidden" name="submit-date" id="submit-date">
+            </fieldset>
+                <button type="submit">Join Now</button>
+        </div>
 
                 
          <div class="levels">
@@ -95,18 +97,6 @@
                 <h3>Gold Membership</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, officiis.</p>
             </section>
-
-
-
-
-
-
-
-
-
-
-
-
 
          </div>        
 
