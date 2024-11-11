@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce</title>    
+    <h2>Chamber of Commerce</h2>    
     <meta name="description" content="WDD 230 Web Frontend Development: Chamber of Commerce">
     <meta name="author" content="Angela Murray">
     <link rel="icon" href="../chamber/favicon.ico">
     <!-- social media meta tags wk2-->
-    <meta property="og:title" content="King George, Virginia Historical Society">
+    <meta property="og:h2" content="King George, Virginia Historical Society">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://kinggeorgehistory.org/gallery/nggallery/image/635056dd15eb8-image_"> 
     <meta property="og:url" content="https://catsrun.github.io/wdd230/chamber/index.html">
@@ -38,6 +38,7 @@
         <div id="mode">😎</div>
     </header>        
     <main>
+        <!-- need h1  -->
         <form action="get" action="thankyou.html"></form>
         <fieldset>
             <!-- use :root to style legend padding on r and l -->
@@ -47,7 +48,7 @@
                 <label>First Name* <input type="text" name="fname"  id="fname" required></label><br>
                 <label>Last Name* <input type="text" name="lname" id="lname" required></label><br>
                 <!-- add regular expression -->
-                <label>Title* <input type="text" name="title" id="title" pattern="[a-zA-Z- ]{7,}" required></label><br>
+                <label>h2* <input type="text" name="h2" id="h2" pattern="[a-zA-Z- ]{7,}" required></label><br>
                 <label>Email* <input type="email" name="email" id="email" placeholder="acb123@acb.com" required></label><br>
                 <!-- check if type 'telephone' is correct -->
                 <label>Moble Number* <input type="telephone" name="moble" id="moble" required></label><br>
@@ -76,7 +77,38 @@
             <button type="submit">Join</button>
 
                 
-                 
+         <div class="levels">
+            <section class="card">
+                <!-- is 'h2' the right use here> -->
+                <h2>NP Membership</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, officiis.</p>
+            </section>
+            <section class="card">
+                <h2>Bronze Membership</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, officiis.</p>
+            </section>
+            <section class="card">
+                <h2>Silver Membership</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, officiis.</p>
+            </section>
+            <section class="card">
+                <h2>Gold Membership</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, officiis.</p>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+         </div>        
 
 
 
