@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce</title>    
+    <meta name="description" content="WDD 230 Web Frontend Development: Chamber of Commerce">
+    <meta name="author" content="Angela Murray">
+    <link rel="icon" href="../chamber/favicon.ico">
+    <!-- social media meta tags wk2-->
+    <meta property="og:title" content="King George, Virginia Historical Society">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://kinggeorgehistory.org/gallery/nggallery/image/635056dd15eb8-image_"> 
+    <meta property="og:url" content="https://catsrun.github.io/wdd230/chamber/index.html">
+    <!-- normalize.css wk2 -->
+    <link rel="stylesheet" href="styles/normalize.css">  
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css"> 
+    <link rel="stylesheet" href="styles/large.css">   
+  
+</head>
+<body>
+
+    <header>          
+        <h1>King George Chamber of Commerce</h1>
+        <!-- why is this here? -->
+        <a id="menu"></a>            
+            <nav>            
+                <ul class="navigation">
+                    <!-- <li><a class="active" href="#">Home</a></li> -->
+                    <li><a href="../index.html">Home</a></li>            
+                    <li><a href="discover.html">Discovery</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>           
+                </ul>
+            </nav>
+        <!-- dark mode, should this be here? -->
+        <div id="mode">😎</div>
+    </header>        
+    <main>
+
+        <div class="thankyou">Thank you for joining the King George Chamber!</div>
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Angela Murray | WDD 230 Project</p>
+        <p >Contact 888-555-1234 | kgChamber.com | Terms of Service </p>
+        <p>Last Modified <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger-menu.js"></script>
+    <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>

@@ -50,10 +50,10 @@
    }
 
     .hero button {    
-        position: absolute;
+        position: absolute ;
         top: 500px;
-        left: 0;
-        right: 0;
+        left: 350px;
+        right: 0px;
         color: rgb(255, 255, 255);
         /* text-align: center; */
         background-color: rgba(75, 75, 121, 0.7); 
@@ -86,7 +86,7 @@
     }
 
     /* for 3 img */
-    .herolable {
+    /* .herolable {
         position: absolute;
         top: 310px;
         left: 50px;
@@ -96,18 +96,13 @@
         box-shadow: 0 0 3rem #fff;
         opacity: 0.75;
         font-family:"Great Vibes", serif;    
-        /* change the font family here ^ */
         font-weight: 700;
         font-size: 1rem;
         border-radius: 8px;
     }
     .herolable::after {
         content: "large";
-        /* text-indent: 0; */
-        /* display: block; */
-         /* New content takes up original line height */
-        /* line-height: initial;  */
-      }
+      } */
 
       .side-container section{
         display: grid;
