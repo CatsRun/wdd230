@@ -273,3 +273,18 @@ nav li {
 .join-form legend{
     padding: 10px;
 }
+
+.join-form textarea
+{
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    /* change text color for what is being typed */
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    /* overrides the default browser styling */
+    appearance: none;
+    /* background-color: red; */
+}
