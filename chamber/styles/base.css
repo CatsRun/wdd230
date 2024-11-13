@@ -264,8 +264,9 @@ nav li {
     font-size: 2rem;
     border-radius: 6px;
     /* background-color: blue; */
-    background-image: linear-gradient(#003e89a5, #003e89d6, #003E89);
-    color: gold;
+    background-image: linear-gradient(#003e89cd, #003e89eb, #003E89);
+    color:  gold;
+    box-shadow: 0 0 10px rgb(26, 26, 23);
     /* text-decoration: underline; */
 }
 
