@@ -51,9 +51,9 @@
                     <label>First Name* <input type="text" name="fname"  id="fname" required></label>
                     <label>Last Name* <input type="text" name="lname" id="lname" required></label>
                     <!-- add regular expression -->
-                    <!-- <label>h2* <input type="text" name="h2" id="h2" pattern="[a-zA-Z- ]{7,}" required></label> -->
+                    <label>Title / Position <input type="text" name="title" id="title" title="At least 8 letters long. Only letters." pattern="[a-zA-Z ]{7,}" required></label>
                     <label>Email* <input type="email" name="email" id="email" placeholder="abc123@acb.com" required></label>
-                    <label>Moble Number* <input type="tel" name="moble" id="moble" placeholder="1235551234" pattern="[0-9]{10,}" required></label>
+                    <label>Moble Number* <input type="tel" name="moble" id="moble" placeholder="1235551234" title="no dashes" pattern="[0-9,-]{10,13}" required></label>
                 </fieldset>
 
                 <fieldset>
