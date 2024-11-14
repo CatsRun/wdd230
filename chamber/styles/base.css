@@ -206,20 +206,29 @@ nav li {
      /* New content takes up original line height */
     /* line-height: initial;  */
   /* } */
-
+/* ----------------- discover ----------------- */
   .side-container {
-    position: fixed;
+    justify-self: center;
   }
-  .side-container section{
+
+  /* .side-container section{
     display: grid;
     grid-template-columns: 1fr;
     max-width: 150px;
-  }
+  } */
 
   .discover-img {
-    justify-items: center;
-    padding-left:100px ;
+    justify-items: center;        
   }
+  
+figcaption {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+
+
 
   .thankyou {
     display: flex;
@@ -229,7 +238,9 @@ nav li {
     margin: 10rem 10rem;
     text-decoration-line: underline;
 }
-/* ---------------join---------------- */
+
+
+/* --------------- join ---------------- */
 
 
 .join-form label {
