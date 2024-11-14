@@ -39,8 +39,9 @@
     </header>        
     <main class="joinpage">
         <!-- need title for form h2?  -->
-         <h2>Join the King Gelore Chamber of Commerce</h2>
-        <form method="get" action="thankyou.html"></form>
+        <h2>Join the King George Chamber of Commerce</h2>
+         <!-- be sure that the entire form in in the form open and closing tag. Including the button. -->
+        <form method="get" action="thankyou.html">
         <div class="join-form">
             <fieldset>
                 <!-- use :root to style legend padding on r and l -->
@@ -66,8 +67,6 @@
 
             <fieldset>
                 <legend>Membership Level</legend>
-                <!-- <div></div> -->
-                <!-- does this need to be required? -->
                 <label><input type="radio" name="membership" id="gold-membership"> Gold Membership </label>
                 <label><input type="radio" name="membership" id="silver-membership"> Silver Membership </label>
                 <label><input type="radio" name="membership" id="bronze-membership"> Bronze Membership </label>
@@ -75,11 +74,14 @@
                 <label><input type="radio" name="membership" id="np-membership"> NP Membership, non-profit organizations, fee </label>
                 
                 <!-- An input element of type (hidden) with a name and id. This field contains the current date/time in millisecond format Date.now(), which records the date and time that the form was loaded by the user. You must use JavaScript to set the value of this field. -->
-                <label><input type="hidden" name="submit-date" id="submit-date"><span id="submition"></span></label>
+                <!-- <label><input type="hidden" name="submit-date" id="submit-date"><span id="submition"></span></label> -->
+                <label><input type="hidden" name="submition" id="submition"></label>
+            
             </fieldset>
                 
-                <button type="submit">Join Now</button>
+                <button type="submit" id="joinbutton">Join Now</button>
         </div>
+        </form>
 
             <!-- <aside id="membership"> -->
          <div class="levels">
@@ -102,31 +104,18 @@
             </section>
             <!-- </aside> -->
          </div>        
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
         
     </main>
 
     <footer>
         <p>&copy; <span id="currentYear"></span> | Angela Murray | WDD 230 Project</p>
-        <p >Contact 888-555-1234 | kgChamber.com | Terms of Service </p>
+        <p > 888-555-1234 | 112 Kings Hwy King George, VA| kgChamber.com | Terms of Service </p>
         <p>Last Modified <span id="lastModified"></span></p>
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger-menu.js"></script>
     <script src="scripts/dark-mode.js"></script>
     <script src="scripts/windchill.js"></script>
+    <!-- <script src="scripts/join.js"></script> -->
 </body>
 </html>
