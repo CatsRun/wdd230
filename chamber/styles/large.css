@@ -70,6 +70,15 @@
         display: none;
     }
 
+    /* dark-mode location */
+    #mode {
+        position: absolute;
+        top: 1.5rem;
+        right: 1rem;
+        font-size: 3rem;
+        cursor: pointer;
+        font-size: 2rem;
+    }
     /* -------------- discover ---------------- */
     /* this overrides wit presidence the h2 display none */
 
@@ -90,16 +99,16 @@
       .discover-img {
       padding-left:100px ;
       }
-
-    /* dark-mode location */
-    #mode {
-        position: absolute;
-        top: 1.5rem;
-        right: 1rem;
-        font-size: 3rem;
-        cursor: pointer;
-        font-size: 2rem;
+      
+/*when curser hovers over img boarder in there*/
+      .discover-img img:hover { 
+        box-shadow: 0 0 3rem #3960d7;
     }
+
+
+
+
+
 
 
     /* for 3 img */
