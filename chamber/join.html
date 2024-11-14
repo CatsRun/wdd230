@@ -37,7 +37,7 @@
         <!-- dark mode, should this be here? -->
         <div id="mode">😎</div>
     </header>        
-    <main>
+    <main class="joinpage">
         <!-- need title for form h2?  -->
          <h2>Join the King Gelore Chamber of Commerce</h2>
         <form method="get" action="thankyou.html"></form>
@@ -52,8 +52,9 @@
                     <!-- add regular expression -->
                     <!-- <label>h2* <input type="text" name="h2" id="h2" pattern="[a-zA-Z- ]{7,}" required></label> -->
                     <label>Email* <input type="email" name="email" id="email" placeholder="abc123@acb.com" required></label>
-                    <label>Moble Number* <input type="tel" name="moble" id="moble" required></label>
+                    <label>Moble Number* <input type="tel" name="moble" id="moble" placeholder="1235551234" pattern="[0-9]{10,}" required></label>
                 </fieldset>
+
                 <fieldset>
                     <legend>Business/Organization Information</legend>
                     <!-- <div></div> -->
@@ -74,12 +75,13 @@
                 <label><input type="radio" name="membership" id="np-membership"> NP Membership, non-profit organizations, fee </label>
                 
                 <!-- An input element of type (hidden) with a name and id. This field contains the current date/time in millisecond format Date.now(), which records the date and time that the form was loaded by the user. You must use JavaScript to set the value of this field. -->
-                <input type="hidden" name="submit-date" id="submit-date">
+                <label><input type="hidden" name="submit-date" id="submit-date"><span id="submition"></span></label>
             </fieldset>
+                
                 <button type="submit">Join Now</button>
         </div>
 
-                
+            <!-- <aside id="membership"> -->
          <div class="levels">
             <section class="card">
                 <!-- is 'h2' the right use here> -->
@@ -98,7 +100,7 @@
                 <h3>Gold Membership</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, officiis.</p>
             </section>
-
+            <!-- </aside> -->
          </div>        
 
 

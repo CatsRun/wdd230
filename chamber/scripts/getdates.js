@@ -17,3 +17,4 @@ function printLastModefied(){
 }
 
 document.getElementById("lastModified").innerHTML = printLastModefied();
+document.getElementById("submition").innerHTML = printLastModefied();

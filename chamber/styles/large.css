@@ -109,40 +109,57 @@
         grid-template-columns: 1fr;
         max-width: 200px;
       }
-} 
+ 
 
 /* --------------join------------- */
-/* how to select just join.html */
-    /* .card,  */
-    /* .join-form  { */
-    /* background-color: red; */
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr; */
-    
-/* } */
+    /* how to select just join.html */
+        /* .card,  */
+        /* .join-form  { */
+        /* background-color: red; */
+        /* display: grid; */
+        /* grid-template-columns: 1fr 1fr; */
+        
+    /* } */
 
-/* .join-form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column: 1 / 3;
-} 
+    /* .join-form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column: 1 / 3;
+    } 
 
-.levels{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column: 1 / 2;
-}  */
+    .levels{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column: 1 / 2;
+    }  */
 
 
 
-/* .join-form fieldset {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column: 1 / 3;
-    
-} */
+    /* .join-form fieldset {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column: 1 / 3;
+        
+    } */
 
-/* why does this not work? */
-.join-form h2{
-    display:inline-block;
+    /* why does this not work? */
+    .join-form h2{
+        display:inline-block;
+    }
+    /* .aside .membership {
+        background-color: red;
+    } */
+
+    .joinpage {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .join-form {
+        grid-column: 1/2;
+    }
+
+    .card {
+        margin: 2rem;
+    }
+
 }

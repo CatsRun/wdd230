@@ -245,29 +245,28 @@ nav li {
     [type="email"],
     [type="tel"]
 {
-    /* background-color: #eee; */
     display: block;
     border: solid 1px #999;
     border-radius: 6px;
     padding: .75rem;
     /* change text color for what is being typed */
     color: #555;
-    width: 100%;
+    width: 90%;
     max-width: 400px;
     /* overrides the default browser styling */
     appearance: none;
     /* background-color: red; */
+    overflow: hidden;
 }
 
 .join-form button {
     margin: 1rem;
     font-size: 2rem;
     border-radius: 6px;
-    /* background-color: blue; */
     background-image: linear-gradient(#003e89cd, #003e89eb, #003E89);
     color:  gold;
     box-shadow: 0 0 10px rgb(26, 26, 23);
-    /* text-decoration: underline; */
+    /* How do I center the button in small view? */
 }
 
 .join-form legend{
@@ -282,9 +281,15 @@ nav li {
     padding: .75rem;
     /* change text color for what is being typed */
     color: #555;
-    width: 100%;
+    width: 90%;
     max-width: 400px;
     /* overrides the default browser styling */
     appearance: none;
     /* background-color: red; */
+}
+
+.joinpage {
+    display: grid;
+    grid-template-columns: 1fr;
+
 }
