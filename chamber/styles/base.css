@@ -1,14 +1,15 @@
 body {
-    font-family: lato, Courier,monospace;
+    /* font-family: lato, Courier,monospace; */
     background-color: rgba(245, 245, 220, 0.956);
 }
+
 main {
     background-color: beige;
 }
 
    
 header { 
-    font-family: lato Impact;
+    font-family: inter Impact;
 }
 
 

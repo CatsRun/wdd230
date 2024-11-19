@@ -69,9 +69,9 @@
                 <legend>Membership Level</legend>
                 <label><input type="radio" name="membership" id="gold-membership"> Gold Membership </label>
                 <label><input type="radio" name="membership" id="silver-membership"> Silver Membership </label>
-                <label><input type="radio" name="membership" id="bronze-membership"> Bronze Membership </label>
+                <!-- <label><input type="radio" name="membership" id="bronze-membership"> Bronze Membership </label> -->
                 <!-- how to add () within the lable? (non-profit organizations, fee) -->
-                <label><input type="radio" name="membership" id="np-membership"> NP Membership, non-profit organizations, fee </label>
+                <label><input type="radio" name="membership" id="np-membership">Non-Profit Member, free </label>
                 
                 <!-- An input element of type (hidden) with a name and id. This field contains the current date/time in millisecond format Date.now(), which records the date and time that the form was loaded by the user. You must use JavaScript to set the value of this field. -->
                 <!-- <label><input type="hidden" name="submit-date" id="submit-date"><span id="submition"></span></label> -->
@@ -87,20 +87,43 @@
          <div class="levels">
             <section class="card">
                 <!-- is 'h2' the right use here> -->
-                <h3>NP Membership</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, officiis.</p>
+                <h3>Non-Profit Member</h3>
+            <!-- membership info crated by ai, copilot -->
+               <ul>
+                    <li>Networking Opportunities: Access to special networking events to connect with local businesses and other non-profits.</li>
+                    <li>Community Events: Participation in community service projects and local events to increase visibility and community engagement.</li>
+                    <li>Resource Sharing: Access to shared resources like meeting rooms and office equipment.</li>
+                    <li>Educational Workshops: Free admission to workshops and seminars focused on non-profit management and development.</li>
+                </ul>    
             </section>
-            <section class="card">
+            <!-- <section class="card">
                 <h3>Bronze Membership</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, officiis.</p>
-            </section>
+                <ul>
+                    <li>Networking Events: Invitation to monthly networking breakfasts and after-hours events.</li>
+                    <li>Business Listings: Inclusion in the Chamber’s online directory and printed materials.</li>
+                    <li>Member Discounts: Discounts on products and services from fellow Chamber members.</li>
+                    <li>Marketing Opportunities: Ability to distribute marketing materials at Chamber events.</li>
+                    <li>Educational Resources: Access to business development workshops and seminars.</li>
+                 </ul>
+            </section> -->
             <section class="card">
                 <h3>Silver Membership</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, officiis.</p>
+               <ul>
+                    <li>Enhanced Directory Listing: Highlighted and detailed listing in the Chamber’s online directory.</li>
+                    <li>Marketing Features: Opportunity to feature in Chamber newsletters and social media shout-outs.</li>
+                    <li>Event Sponsorship: Priority access to event sponsorship opportunities.</li>
+                    <li>Workshops and Trainings: Free attendance to all Chamber-hosted workshops and webinars.</li>
+                    <li>Member-to-Member Deals: Exclusive deals and discounts from other Chamber members.</li>
+                 </ul>
             </section>
             <section class="card">
                 <h3>Gold Membership</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, officiis.</p>
+               <ul>
+                    <li>Premier Networking Access: VIP invitations to exclusive networking events and luncheons with local leaders.</li>
+                    <li>Premium Directory Placement: Top-tier placement and featured listing in the Chamber’s online directory.</li>
+                    <li>Event Hosting: Opportunities to host and speak at Chamber events.</li>
+                    <li>Consulting Services: Free consulting sessions on business strategy, marketing, and financial planning.</li>
+                </ul>
             </section>
             <!-- </aside> -->
          </div>        
@@ -109,7 +132,7 @@
 
     <footer>
         <p>&copy; <span id="currentYear"></span> | Angela Murray | WDD 230 Project</p>
-        <p > 888-555-1234 | 112 Kings Hwy King George, VA| kgChamber.com | Terms of Service </p>
+        <p > 888-555-1234 | 112 Kings Hwy King George, VA | kgChamber.com | Terms of Service </p>
         <p>Last Modified <span id="lastModified"></span></p>
     </footer>
     <script src="scripts/getdates.js"></script>
