@@ -94,6 +94,8 @@
         display: grid;
         grid-template-columns: 1fr;
         max-width: 200px;
+        /* keeps the side-container on top of the img */
+        background-color: beige;
       }
 
       .discover-img {
