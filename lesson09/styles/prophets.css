@@ -5,21 +5,20 @@ body{
 
 #cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr; */
     /* research 'repeat' */
-    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 20px;
-    grid-auto-flow: row;
+    /* grid-auto-flow: row; */
+    /* padding: 1rem; */
 }
 
 #cards img{
-    margin: 1rem;
+    /* margin: 1rem; */
     border-radius: 10px;
+    
 }
 
-#cards section {
-    border-radius: 20px;
-}
 
 #cards section {
     border: 1px solid #ccc;
@@ -28,4 +27,15 @@ body{
     /* padding: 10px; */
     text-align: center;
     background-color: blanchedalmond;
+    border-radius: 20px;
 }
+
+/* #cards section {
+    margin: 0.25rem;
+    padding: 0.35rem;
+    background-color: #eee;
+    border: 1px solid #bbb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
