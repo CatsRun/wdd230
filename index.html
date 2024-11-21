@@ -83,8 +83,16 @@
 
             <section class="card">
                 <h3>Information</h3>
-                <p>Virginia, USA</p>
-                <p>Weather: Raining</p>
+                <p>King Georege, USA</p>
+                <p>Weather: </p>
+                <span id="current-temp"></span>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <span id="future-temp">Forecast</span>
+
+
                 <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
             </section>
         </div>    
@@ -97,9 +105,21 @@
         <p>&copy; <span id="currentYear"></span> | Angela Murray | Virginia, USA | </p>
         <p > Last Modified <span id="lastModified"></span></p>
     </footer>
+    <!-- date in footer -->
     <script src="scripts/getdates.js"></script>
+    <!-- nav menue -->
     <script src="scripts/hamburger-menu.js"></script>
+    <!-- Number of visits counter -->
     <script src="lesson07/scripts/visit-counter.js"></script>
-    <script src="lesson09/scripts/prophets.js"></script>
+<!-- do i need this? It interfears with weather- append child -->
+    <!-- <script src="lesson09/scripts/prophets.js"></script> -->
+     <!-- current dynamic weather in Inforation -->
+
+     <!-- uncomment this once forecast is working*** -->
+    <!-- <script src="scripts/weather-current.js"></script> -->
+    <script src="scripts/weather-forecast.js"></script>
+
+    <!-- remove? -->
+    <!-- <script src="lesson10/scripts/weather.js"></script> -->
 </body>
 </html>
