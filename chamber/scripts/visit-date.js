@@ -1,22 +1,27 @@
 // stores visit counter locally
-const visitsDisplay = document.querySelector(".visits");
+const visitsDisplay = document.querySelector("#visits");
 // let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
-let today = Date.now();
+// let today = Date.now();
 const currentDate = new Date();
 const lastVisit = localStorage.getItem('lastVisit');
-localStorage.setItem('lastVisit', currentDate);
+localStorage.setItem('lastVisit', currentDate.getTime());
+console.log(currentDate);
+console.log(lastVisit);
+const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+const firstDate = new Date(2008, 1, 12);
+const diffDays = Math.round(Math.abs((firstDate - lastVisit) / oneDay));
+console.log(diffDays);
 
 // if (numVisits !== 0) {
-if (lastVisit){ 
-	const lastVisit = new Date(lastVisit);
-	let interval = new Date( 2024, 2, 4, 12); //what is this?
+if (diffDays !== 0 ){ 
+	// const lastVisit = new Date(lastVisit);
     // if ( Date.now() == today ){
-		if (interval < 1) {
+		if (diffDays < 1) {
 		visitsDisplay.textContent = `Back so soon! Awesome!`;
 	}
 	
-	else if (Date.now() !== today ) {
-		visitsDisplay.textContent =`You last visited  days ago.`
+	else   {
+		visitsDisplay.textContent =`You last visited ${diffDays} days ago.`
 	}
 }	 
 
@@ -25,8 +30,8 @@ else {
 		console.log(no);
 }
 
-numVisits++;
-localStorage.setItem("numVisits-ls", numVisits);
+// numVisits++;
+// localStorage.setItem("numVisits-ls", numVisits);
  
 
 localStorage['key'] = ''+myDate.getTime();
