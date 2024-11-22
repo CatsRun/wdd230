@@ -2,6 +2,8 @@ body {
     /* font-family: lato, Courier,monospace; */
     background-color: rgba(245, 245, 220, 0.956);
     /* font-family: Arial, sans-serif; apply this */
+    font-family: inter Impact, Roboto, Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
 
 main {
@@ -9,9 +11,9 @@ main {
 }
 
    
-header { 
+/* header { 
     font-family: inter Impact;
-}
+} */
 
 
 footer {
@@ -48,7 +50,7 @@ main {
     padding: 1rem;
     
 }
-
+/* ------- hero --------------- */
 .hero img {
 	/* margin: 10px auto; */
 	position: relative;
@@ -58,9 +60,11 @@ main {
 }
 
 /* fix this position */
+/* look at .banner to see formatting ideas */
 .hero button {    
     position: absolute;
-
+    padding: 2rem;
+    border-radius: 2rem;
     top: 300px;
     left: 0;
     right: 0;
@@ -305,4 +309,28 @@ figcaption {
     display: grid;
     grid-template-columns: 1fr;
 
+}
+/* ------------ banner -------- */
+
+.banner {
+    /* style */
+    border: solid;
+    border-color: #445088;
+    border-radius: 2rem;
+    /* width: 25rem; */
+    /* text-align: center; */
+    padding: 4rem;
+    background-color: #3739a4;
+    color: white;
+    font-size: 2rem;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    
+    /* location */
+    position: fixed;
+    /* display: inline block;     */
+    top: 350px;
+    left: 270px;
+    /* display: none; */
+    /* create an click X to dismiss */
+    /* only visable mon, tues, wen... day 1, 2, 3 */
 }
