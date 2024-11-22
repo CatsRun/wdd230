@@ -17,4 +17,6 @@ function printLastModefied(){
 }
 
 document.getElementById("lastModified").innerHTML = printLastModefied();
+
+// used on join page
 document.getElementById("submition").innerHTML = printLastModefied();

@@ -57,8 +57,13 @@
              </picture> -->
         </div>
         <!-- <div class="herolable">This image is </div> -->
-        <div class="banner" id="banner">Meet & Greet Wednesday 7:00pm <br>Members and Visitors welcome</div>
 
+        <div class="banner" id="banner">   
+            Meet & Greet Wednesday 7:00pm <br>Members and Visitors welcome
+            <!-- <button class="banner_close" type="button"></button> -->
+            <button class="banner_close" type="button">❌</button>
+        </div>
+        
         <div class="grid-container">
             <section class="card">
                 <h2>Current Events</h2>
@@ -75,16 +80,19 @@
                     <img id="weather-icon" src=" " alt="">
                     <figcaption></figcaption>
                 </figure>
+                
+                
+                <!-- replace static '5' with real wind speed -->
+                <!-- <p>Wind Speed: <span id="windSpeed">5</span> mph</p>
+                <p id="windChill">Wind Chill: </p>
+                <p id="Wind-Speedl">Wind-Speed: </p> -->
                 <P><strong>3 Day Forecast</strong></P>
                 <p>Tomorrow: <span id="future-temp1">Forecast1</span></p>
                 <p>2 days: <span id="future-temp2">Forecast2</span></p>
                 <p>3 days: <span id="future-temp3">Forecast3</span></p>
 
-                <!-- <p>Temperature: <span id="temp">30</span>°F</p>
-                <p>Wind Speed: <span id="windSpeed">5</span> mph</p>
-                <p id="windChill">Wind Chill: </p> -->
-
-                <!-- Temperature <input type="text" id="Temperature"><br>
+                <!-- input boxes: do not use -->
+                <!-- Temperature <input type="text" id="temp"><br>
                 Wind-Speed  <input type="text" id="Wind-Speed"><br> -->
                 <!-- move button to event listener? -->
                 <!-- <button type="button" onclick="doInputOutput()">Wind Chill</button> -->
@@ -119,6 +127,7 @@
     <script src="scripts/dark-mode.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/day-contingent.js"></script>
+    <script src="scripts/banner-close.js"></script>
 
     <!-- why will only one of these work at a time? -->
     <script src="scripts/forecast.js"></script>

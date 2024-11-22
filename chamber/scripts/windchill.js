@@ -16,6 +16,8 @@
     // document.getElementById("output").innerHTML = output;
 // }
 
+
+// temp == api temp
 document.addEventListener("DOMContentLoaded", () => {
     const temp = parseFloat(document.getElementById("temp").textContent);
     const windSpeed = parseFloat(document.getElementById("windSpeed").textContent);

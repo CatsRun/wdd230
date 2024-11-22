@@ -324,18 +324,39 @@ figcaption {
     border-radius: 2rem;
     /* width: 25rem; */
     /* text-align: center; */
-    padding: 4rem;
+    padding: 2rem;
     background-color: #3739a4;
     color: white;
-    font-size: 2rem;
+    font-size: 1.2rem;
     box-shadow: 0 0 10px rgb(0, 0, 0);
-    
+    white-space: nowrap;
+
     /* location */
     position: fixed;
-    /* display: inline block;     */
-    top: 350px;
-    left: 270px;
-    /* display: none; */
-    /* create an click X to dismiss */
+    display: inline-block;    
+    top: 190px;
+    left: 20px;
     /* only visable mon, tues, wen... day 1, 2, 3 */
+    /* flex-grow: 1; */
 }
+
+/* .banner_content { */
+    /* flex-grow: 1; */
+    /* margin-right: 1em; */
+    /* line-height: 1.4; */
+  /* } */
+  
+.banner_close {
+    /* flex-shrink: 0; */
+    position: relative;
+    top: -45px;
+    left: 20px;
+    background-color: #3739a4; 
+    border: none;
+    border-radius: .2rem;
+    cursor: pointer;
+}
+
+.banner_close:hover {
+    background: #007e65;
+  }

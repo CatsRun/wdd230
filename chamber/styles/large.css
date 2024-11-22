@@ -157,4 +157,27 @@
         margin: 2rem;
     }
 
+
+
+/* ----------- banner ------------ */
+
+.banner {
+    /* style */
+    padding: 4rem;
+    font-size: 2rem;
+    /* location */
+    position: fixed;
+    /* display: inline-block;     */
+    top: 350px;
+    left: 270px;
+    /* display: none; */
+    /* create an click X to dismiss */
+    /* only visable mon, tues, wen... day 1, 2, 3 */
+}
+
+.banner_close{
+    position: relative;
+    top: -75px;
+    left: 35px;
+}
 }

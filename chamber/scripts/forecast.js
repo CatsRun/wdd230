@@ -1,12 +1,9 @@
 // Weather location: King George, VA
+// 3 day forecast
 const futureTemp1 = document.querySelector('#future-temp1');
 const futureTemp2 = document.querySelector('#future-temp2');
 const futureTemp3 = document.querySelector('#future-temp3');
-// const weatherIcon = document.querySelector('#weather-icon');
-// const captionDesc = document.querySelector('figcaption');
 
-// const url = 'https://api.openweathermap.org/data/2.5/weather?lat=38.27&lon=-77.18&units=imperial&appid=bbe357ddc270c8f85a1e2c6b8dc5e569'
-// const urlForecast = 'https://api.openweathermap.org/data/2.5/forecast?lat=38.27&lon=-77.18&units=imperial&appid=bbe357ddc270c8f85a1e2c6b8dc5e569';
 const urlForecast = 'https://api.openweathermap.org/data/2.5/forecast?lat=38.27&lon=-77.18&units=imperial&appid=bbe357ddc270c8f85a1e2c6b8dc5e569';
 // "units=imperial"
 // apiKey=bbe357ddc270c8f85a1e2c6b8dc5e569
@@ -39,3 +36,4 @@ async function apiFetch() {
 apiFetch();
 
 
+// I need to have async function process disdisplayResults twice pulling in 2 different data sets, one for each go.
