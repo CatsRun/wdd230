@@ -70,10 +70,19 @@
             </section>
             <section class="card">
                 <h2>Weather</h2>
+                <p>Current: <span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src=" " alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <P><strong>3 Day Forecast</strong></P>
+                <p>Tomorrow: <span id="future-temp1">Forecast1</span></p>
+                <p>2 days: <span id="future-temp2">Forecast2</span></p>
+                <p>3 days: <span id="future-temp3">Forecast3</span></p>
 
-                <p>Temperature: <span id="temp">30</span>°F</p>
+                <!-- <p>Temperature: <span id="temp">30</span>°F</p>
                 <p>Wind Speed: <span id="windSpeed">5</span> mph</p>
-                <p id="windChill">Wind Chill: </p>
+                <p id="windChill">Wind Chill: </p> -->
 
                 <!-- Temperature <input type="text" id="Temperature"><br>
                 Wind-Speed  <input type="text" id="Wind-Speed"><br> -->
@@ -83,8 +92,9 @@
 
             </section>
 
-            <H2>Member Spotlight</H2>
+            <!-- <H2>Member Spotlight</H2> -->
             <section class="card">
+                
                 <h3>Spotlight 1</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, labore.</p>
             </section>
@@ -109,5 +119,9 @@
     <script src="scripts/dark-mode.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/day-contingent.js"></script>
+
+    <!-- why will only one of these work at a time? -->
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/weather-current.js"></script>
 </body>
 </html>
