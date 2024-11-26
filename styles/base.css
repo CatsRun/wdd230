@@ -88,6 +88,11 @@ nav a {
     /* text-align: center; */
 }
 
+/* removed the underline for a link */
+.card a {    
+    text-decoration: none;
+}
+
 footer {
     display: flex;
     justify-content: center;
