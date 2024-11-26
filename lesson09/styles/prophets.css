@@ -3,6 +3,10 @@ body{
     font-family: Roboto, Arial, Helvetica, sans-serif
 }
 
+h1 {
+    text-align: center;
+}
+
 #cards {
     display: grid;
     /* grid-template-columns: 1fr 1fr 1fr; */

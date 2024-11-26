@@ -10,6 +10,15 @@ async function getProphetData() {
     displayProphets(data.prophets);
 }
 
+// This is to test the links: 
+// async function getLinks() {
+//     const response = await fetch(linksURL);
+//     const data = await response.json();
+//     console.log(data);
+//   }
+  
+//   getLinks();
+
 getProphetData();
 
 const displayProphets = (prophets) => {

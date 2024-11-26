@@ -6,47 +6,28 @@
                 {
                     "url": "lesson02/design.html",
                     "title":"Web Design Principles"
-                }
-            ]
-        },
-        {
-            "lesson": "02",
-            "links": [
+                },
                 {
                     "url": "lesson02/media-query.html",
                     "title":"media-query"
-                }
-            ]
-        },
-        {
-            "lesson": "02",
-            "links": [
+                },
                 {
                     "url": "lesson02/design-principles.html",
                     "title":"Design Princilpes Document"
                 }
             ]
-        },        {
+        },        
+        {
             "lesson": "03",
             "links": [
                 {
                     "url": "lesson03/images/w3schools_combinators.png",
                     "title":"Combinators w3schools Quiz"
-                }
-            ]
-        },
-        {
-            "lesson": "03",
-            "links": [
+                },
                 {
                     "url": "https://codepen.io/CatsRun/pen/PoMZYYP",
                     "title":"Pseudo-element"
-                }
-            ]
-        },
-        {
-            "lesson": "03",
-            "links": [
+                 },
                 {
                     "url": "https://codepen.io/CatsRun/pen/BaXjjmB",
                     "title":"Hamburger menu"
@@ -77,44 +58,26 @@
                 {
                     "url": "lesson06/images/landscape.webp",
                     "title":"WebP"
-                }
-            ]
-        },
-        {
-            "lesson": "06",
-            "links": [
+                },
                 {
                     "url": "lesson06/responsive-images.html",
                     "title":"Responsive Imanges"
                 }
             ]
-        },
-        {
-            "lesson": "",
-            "links": [
-                {
-                    "url": "",
-                    "title":""
-                }
-            ]
-        },
+            },
         {
             "lesson": "07",
             "links": [
                 {
                     "url": "lesson07/lazyload.html",
                     "title":"Lazy Loading"
-                }
-            ]
-        },
-        {
-            "lesson": "07",
-            "links": [
+            
+                },
                 {
                     "url": "chamber/discover.html",
                     "title":"Chamber Discover"
-                }
-            ]
+                }    
+                ]    
         },
         {
             "lesson": "08",
@@ -122,26 +85,17 @@
                 {
                     "url": "lesson08/tablebuild.html",
                     "title":"Table build"
-                }
-            ]
-        },
-        {
-            "lesson": "08",
-            "links": [
+            
+                },
                 {
                     "url": "lesson08/form-start/Form-start/index.html",
                     "title":"Practice form"
-                }
-            ]
-        },
-        {
-            "lesson": "08",
-            "links": [
+                },
                 {
                     "url": "form.html",
                     "title":"Form"
                 }
-            ]
+            ]        
         },
         {
             "lesson": "09",
@@ -149,6 +103,15 @@
                 {
                     "url": "lesson09/prophets.html",
                     "title":"prophets json activity"
+                }
+            ]
+        },    
+        {
+            "lesson": "10",
+            "links": [
+                {
+                    "url": "lesson10/weather.html",
+                    "title":"Weather"
                 }
             ]
         }
