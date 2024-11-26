@@ -106,18 +106,14 @@ nav {
     /* text-decoration: none; */
     /* margin: 10px; */
     /* display: none; */ /* add this when making large view*/
-
-    
 }
 
 nav li {
-    /* text-decoration: none; */
     list-style-type: none;
     margin: 10px;
     /* stops 'about us' from wraping */
     white-space: nowrap;
 }
-
 
 #menu {
     display: block;
@@ -133,26 +129,21 @@ nav li {
 }    
 
 
-/* makes a hamberger menu */
+/********* makes a hamberger menu **********/
 #menu::before {
 	content: "☰";
     color: goldenrod;
     
 }
 
-
-
 #menu.open::before {
 	content: "X";
 }
-
 
 .navigation {
 	display: flex;
 	flex-direction: column;
 	list-style: none;
-	/* background-color: #333; */
-	/* color: #fff; */
 }
 
 .navigation a {
@@ -178,10 +169,14 @@ nav li {
 }
 
 /* just a wayfinding symbol for the user */
-.active::before {
+/* .active::before {
+	content: "";  
+} */
+.navigation::before {
 	content: "";  
 }
-  
+
+
 /* dark-mode button location */
   #mode {
 	position: absolute;
@@ -218,19 +213,13 @@ nav li {
     /* line-height: initial;  */
   /* } */
 /* ----------------- discover ----------------- */
-  .side-container {
+.side-container {
     justify-self: center;
-  }
+    }
 
-  /* .side-container section{
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width: 150px;
-  } */
-
-  .discover-img {
+.discover-img {
     justify-items: center;        
-  }
+    }
   
 figcaption {
     font-size: 1.5rem;
@@ -238,10 +227,7 @@ figcaption {
     margin-bottom: 5rem;
 }
 
-
-
-
-  .thankyou {
+.thankyou {
     display: flex;
     justify-content: center;
     font-size: 3rem;

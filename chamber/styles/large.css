@@ -84,26 +84,33 @@
     /* this overrides with presidence the h2 display none */
 
     .side-container {
-        position: fixed;
+        max-width: 25rem;
       }
 
-    .side-container section h2{
+    /* .side-container section h2{
         display:inline-block;
-    }
+    } */
     
-      .side-container section{
+      /* .side-container section{
         display: grid;
         grid-template-columns: 1fr;
         max-width: 200px;
-        /* keeps the side-container on top of the img */
+        keeps the side-container on top of the img
         background-color: beige;
-      }
+      } */
 
-      .discover-img {
+      /* .discover-img {
       padding-left:100px ;
+      padding-left:100px ;
+      } */
+      
+
+      #discover-pg{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
       }
       
-/*when curser hovers over img boarder in there*/
+    /*when curser hovers over img boarder in there*/
       .discover-img img:hover { 
         box-shadow: 0 0 3rem #3960d7;
     }
