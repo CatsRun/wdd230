@@ -16,7 +16,7 @@ function displayLinks(lessons) {
 
     lessons.forEach(lesson => {
         const newListItem = document.createElement("li");
-        newListItem.textContent = `Lesson ${lesson.lesson}: `;
+        newListItem.textContent = `Week ${lesson.lesson}: `;
         // console.log(newListItem)
         lesson.links.forEach((link) => {
             const newLink = document.createElement("a");
