@@ -9,7 +9,7 @@ const urlForecast = 'https://api.openweathermap.org/data/2.5/forecast?lat=38.27&
 // apiKey=bbe357ddc270c8f85a1e2c6b8dc5e569
 
 function displayResults(data) {
-    console.log(data.list[0].main.temp);
+    // console.log(data.list[0].main.temp);
     futureTemp1.innerHTML = `${data.list[0].main.temp}&deg;F`;
     futureTemp2.innerHTML = `${data.list[1].main.temp}&deg;F`;
     futureTemp3.innerHTML = `${data.list[2].main.temp}&deg;F`;

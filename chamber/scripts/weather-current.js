@@ -8,10 +8,11 @@ const url = 'https://api.openweathermap.org/data/2.5/weather?lat=38.27&lon=-77.1
 
 // "units=imperial"
 // apiKey=bbe357ddc270c8f85a1e2c6b8dc5e569
-function displayResults(data) {
+function displayResults2(data) {
     // console.log(data)
     currentTemp.innerHTML = `${data.main.temp}&deg;F`; 
-    console.log(data.wind);
+    // use this when fixing the windspeed
+    // console.log(data.wind);
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     
     let desc = data.weather[0].description;
@@ -26,7 +27,7 @@ async function apiFetch() {
         if (response.ok) {
             const data = await response.json();
             // console.log(data.weather);
-            displayResults(data); 
+            displayResults2(data); 
         } else {
             throw Error (await response.text());
         }
@@ -46,7 +47,7 @@ apiFetch();
 
 // const urlForecast = 'https://api.openweathermap.org/data/2.5/forecast?lat=38.27&lon=-77.18&units=imperial&appid=bbe357ddc270c8f85a1e2c6b8dc5e569';
 
-// function displayResults(data) {
+// function displayResults2(data) {
 //     console.log(data.list[0].main.temp);
 //     futureTemp1.innerHTML = `${data.list[0].main.temp}&deg;F`;
 //     futureTemp2.innerHTML = `${data.list[1].main.temp}&deg;F`;

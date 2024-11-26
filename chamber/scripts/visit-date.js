@@ -32,11 +32,13 @@ else {
 
 // numVisits++;
 // localStorage.setItem("numVisits-ls", numVisits);
- 
+console.log(localStorage['lastVisit']);
+var myDate2 = new Date(parseInt(localStorage['lastVisit'], 10)); 
+console.log("|"+myDate2+"|");
+localStorage['lastVisit'] = ''+myDate2.getTime();
 
-localStorage['key'] = ''+myDate.getTime();
-var myDate = new Date(parseInt(localStorage['key'], 10));
 
-console.log(myDate);
+
+console.log(myDate2);
 
 // I need to save the last visited date and then compare that to DateNow(). 

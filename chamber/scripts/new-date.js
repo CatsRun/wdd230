@@ -16,7 +16,8 @@ function printLastModefied(){
     return dateFormated;
 }
 
-document.getElementById("lastModified").innerHTML = printLastModefied();
+// used on index page
+// document.getElementById("lastModified").innerHTML = printLastModefied();
 
 // used on join page
-// document.getElementById("submition").innerHTML = printLastModefied();
+document.getElementById("submition").innerHTML = printLastModefied();
