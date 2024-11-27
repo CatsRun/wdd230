@@ -1,5 +1,5 @@
 const baseURL = "https://catsrun.github.io/wdd230/";
-const linksURL = "https://catsrun.github.io/wdd230/data/members.json";
+const linksURL = "https://catsrun.github.io/wdd230/chamber/data/members.json";
  
 async function getLinks() {
         const response = await fetch(linksURL);
