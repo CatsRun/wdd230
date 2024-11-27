@@ -6,7 +6,7 @@
             "phone": "540-555-1236",
             "url": "url",
             "image": "image",
-            "membership level": "Non-profit",
+            "level": "Non-profit",
             "other": "Other"
         },
         {
@@ -15,7 +15,7 @@
             "phone": "540-555-1235",
             "url": "url",
             "image": "image",
-            "membership level": "Gold",
+            "level": "Gold",
             "other": "Grocery store"
         },
         {
@@ -24,7 +24,7 @@
             "phone": "540-555-4569",
             "url": "url",
             "image": "image",
-            "membership level": "Gold",
+            "level": "Gold",
             "other": "Gas"
         },
         {
@@ -33,7 +33,7 @@
             "phone": "540-555-4567",
             "url": "url",
             "image": "image",
-            "membership level": "Silver",
+            "level": "Silver",
             "other": "Resturant"
         },
         {
@@ -42,7 +42,7 @@
             "phone": "540-555-1896",
             "url": "url",
             "image": "image",
-            "membership level": "Silver",
+            "level": "Silver",
             "other": "Medical"
         },
         {
@@ -51,7 +51,7 @@
             "phone": "540-555-9874",
             "url": "url",
             "image": "image",
-            "membership level": "Silver",
+            "level": "Silver",
             "other": "Salon"
         },
         {
@@ -60,7 +60,7 @@
             "phone": "540-555-9632",
             "url": "url",
             "image": "image",
-            "membership level": "Non-profit",
+            "level": "Non-profit",
             "other": "Library"
         },
         {
@@ -69,7 +69,7 @@
             "phone": "540-555-9541",
             "url": "url",
             "image": "image",
-            "membership level": "level",
+            "level": "level",
             "other": "Hardware"
         }
         
