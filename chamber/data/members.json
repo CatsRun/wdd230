@@ -1,0 +1,81 @@
+{
+    "members": [
+        {
+            "name": "Opp-Shop",
+            "address": "100 Kings Hyw, King Geroge VA 22485",
+            "phone": "540-555-1236",
+            "url": "url",
+            "image": "image",
+            "membership level": "Non-profit",
+            "other": "Other"
+        },
+        {
+            "name": "Food Lion",
+            "address": "200 Kings Hyw",
+            "phone": "540-555-1235",
+            "url": "url",
+            "image": "image",
+            "membership level": "Gold",
+            "other": "Grocery store"
+        },
+        {
+            "name": "Sheets",
+            "address": "100 Dalhgren Rd, King Geroge VA 22485",
+            "phone": "540-555-4569",
+            "url": "url",
+            "image": "image",
+            "membership level": "Gold",
+            "other": "Gas"
+        },
+        {
+            "name": "Dominos",
+            "address": "500 Kings Hwy, King Geroge VA 22485",
+            "phone": "540-555-4567",
+            "url": "url",
+            "image": "image",
+            "membership level": "Silver",
+            "other": "Resturant"
+        },
+        {
+            "name": "King's Vet",
+            "address": "250 Kings Hyw, King Geroge VA 22485",
+            "phone": "540-555-1896",
+            "url": "url",
+            "image": "image",
+            "membership level": "Silver",
+            "other": "Medical"
+        },
+        {
+            "name": "Salies Salon",
+            "address": "200 Delegation Dr., King Geroge VA 22485 ",
+            "phone": "540-555-9874",
+            "url": "url",
+            "image": "image",
+            "membership level": "Silver",
+            "other": "Salon"
+        },
+        {
+            "name": "L.E Smoot Library",
+            "address": "5523 Kings Hwy, King Geroge VA 22485 ",
+            "phone": "540-555-9632",
+            "url": "url",
+            "image": "image",
+            "membership level": "Non-profit",
+            "other": "Library"
+        },
+        {
+            "name": "Ace Hardware",
+            "address": "3321 Runner Way, King Geroge VA 22485 ",
+            "phone": "540-555-9541",
+            "url": "url",
+            "image": "image",
+            "membership level": "level",
+            "other": "Hardware"
+        }
+        
+
+
+        
+    ]
+
+}
