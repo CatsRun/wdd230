@@ -12,57 +12,76 @@ async function getLinks() {
 getLinks();
 
 function displayMembers(members) {
-    const lessonLinks = document.getElementById("members-chamber");
+    const chamberMembers = document.getElementById("members-chamber");
+    members.forEach(members => {
+        // try printing foreach [0] 
 
+        
         let card = document.createElement('section');
-        let name = document.createElement('h2');
-        let address = document.createElement('h3');
-        let phone = document.createElement('h3');
-        let url = document.createElement("a");
-        let image = document.createElement('img');
-        let level
 
-    members.forEach(lesson => {
+
+        
+        let name = document.createElement('li');
+        let address = document.createElement('li');
+        // let phone = document.createElement('li');
+        // let url = document.createElement("a");
+        // let image = document.createElement('img');
+        // let level = document.createElement('li');
+        // let other = document.createElement('li');
+
+     console.log(chamberMembers)
+        
         const newListItem = document.createElement("li");
-        newListItem.textContent = `Week ${lesson.lesson}: `;
-        console.log(newListItem)
-        // lesson.links.forEach((link) => {
-        //     const newLink = document.createElement("a");
-        //     newLink.href = baseURL + link.url;
-        //     newLink.textContent = `🖊️ ${link.title}`;
+        newListItem.textContent =name;
+        // newListItem.  =name;
+        // newListItem.textContent =name;
+        // newListItem.textContent =name;
+        // newListItem.textContent =name;
+        // newListItem.textContent =name;
+        // newListItem.textContent =name;
 
-        //     newListItem.appendChild(newLink);
-        // });
+        name.textContent = members.name;
+        address.textContent = members.address;
+        // name.textContent = members.name;
+        // name.textContent = members.name;
+        // name.textContent = members.name;
+        // name.textContent = members.name;
+        // name.textContent = members.name;
 
-        lessonLinks.appendChild(newListItem);
+        chamberMembers.appendChild(name);
+        chamberMembers.appendChild(address);
+        // chamberMembers.appendChild(name);
+        // chamberMembers.appendChild(name);
+        // chamberMembers.appendChild(name);
+        // chamberMembers.appendChild(name);
+        // chamberMembers.appendChild(name);
+        chamberMembers.forEach(members => {
+            chamberMembers.appendChild(card);
+        });
+        // set the answers to a variable and foreach that variable into sections or cards
     });
 }
 
+displayMembers();
 
 
 // getProphetData();
 
 // const displayProphets = (prophets) => {
 //     prophets.forEach((prophet) => {
-//         let card = document.createElement('section');
-//         let fullName = document.createElement('h2');
-//         let dob = document.createElement('h3');
-//         let place = document.createElement('h3');
-//         let portrait = document.createElement('img');
-
         
-//         portrait.setAttribute('src', prophet.imageurl);
+//         image.setAttribute('src', prophet.imageurl);
 //         fullName.textContent = `${prophet.name} ${prophet.lastname}`;
 //         dob.textContent = `Date of Birth: ${prophet.birthdate}`;
 //         place.textContent = `Place of Birth: ${prophet.birthplace}`;
-//         portrait.setAttribute('loading', 'lazy');
-//         portrait.setAttribute('width', '340');
-//         portrait.setAttribute('height', '440');
+//         image.setAttribute('loading', 'lazy');
+//         image.setAttribute('width', '340');
+//         image.setAttribute('height', '440');
 
 //         card.appendChild(fullName); 
 //         card.appendChild(dob);
 //         card.appendChild(place);
-//         card.appendChild(portrait);
+//         card.appendChild(image);
     
 //         cards.appendChild(card);
         

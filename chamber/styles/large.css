@@ -51,19 +51,20 @@
 
     .hero button {    
         position: absolute ;
-        top: 500px;
+        /* top: 500px; */
         left: 350px;
-        right: 0px;
+        /* right: 0px; */
         color: rgb(255, 255, 255);
         /* text-align: center; */
         background-color: rgba(75, 75, 121, 0.7); 
-    
+        
         margin: 1rem;
         /* background-color: var(--primary-color);  */
         color: beige;
         border: none;
         /* padding: .75rem; */
-        font-size: 1.2rem;
+        font-size: 2rem;
+        max-width: fit-content;
     }
 
 /* why did I add this? */

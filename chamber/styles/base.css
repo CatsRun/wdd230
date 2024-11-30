@@ -71,17 +71,18 @@ main {
     padding: 2rem;
     border-radius: 2rem;
     top: 300px;
-    left: 0;
-    right: 0;
+    left: 50px;
     color: rgb(255, 255, 255);
-    /* text-align: center; */
     background-color: rgba(75, 75, 121, 0.7); 
-    max-width: 100px;
+    /* max-width: 100px; not this**** */
+    /* this is important******* */
+    max-width: fit-content;
     margin: 1rem;
     /* background-color: var(--primary-color);  */
     color: #fff;
     border:#cf9c6a;
-    font-size: .5rem;
+    font-size: 1.5rem;
+    white-space: nowrap;
 }
 
 
