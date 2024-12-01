@@ -73,7 +73,7 @@ main {
     top: 300px;
     left: 50px;
     color: rgb(255, 255, 255);
-    background-color: rgba(75, 75, 121, 0.7); 
+    background-color: rgba(75, 75, 121, 0.839); 
     /* max-width: 100px; not this**** */
     /* this is important******* */
     max-width: fit-content;
