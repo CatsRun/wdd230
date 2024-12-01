@@ -170,12 +170,15 @@ nav li {
 }
 
 /* just a wayfinding symbol for the user */
-/* .active::before {
+.active::before {
+	content: "~";
+}
+.active::after {
+    content: "~";
+}
+/* .navigation::before {
 	content: "";  
 } */
-.navigation::before {
-	content: "";  
-}
 
 
 /* dark-mode button location */
