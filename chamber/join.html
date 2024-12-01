@@ -44,7 +44,6 @@
         <div id="mode">😎</div>
     </header>        
     <main class="joinpage">
-        <!-- need title for form h2?  -->
         <h2>Join the King George Chamber of Commerce</h2>
          <!-- be sure that the entire form in in the form open and closing tag. Including the button. -->
         <form method="get" action="thankyou.html">
@@ -57,7 +56,7 @@
                     <label>First Name* <input type="text" name="fname"  id="fname" required></label>
                     <label>Last Name* <input type="text" name="lname" id="lname" required></label>
                     <!-- add regular expression -->
-                    <label>Title / Position <input type="text" name="title" id="title" title="At least 8 letters long. Only letters." pattern="[a-zA-Z ]{7,}" required></label>
+                    <label>Title / Position* <input type="text" name="title" id="title" title="At least 8 letters long. Only letters." pattern="[a-zA-Z ]{7,}" required></label>
                     <label>Email* <input type="email" name="email" id="email" placeholder="abc123@acb.com" required></label>
                     <label>Moble Number* <input type="tel" name="moble" id="moble" placeholder="1235551234" title="no dashes" pattern="[0-9,-]{10,13}" required></label>
                 </fieldset>
@@ -73,12 +72,9 @@
 
             <fieldset>
                 <legend>Membership Level</legend>
-                <label><input type="radio" name="membership" id="gold-membership"> Gold Membership </label>
-                <label><input type="radio" name="membership" id="silver-membership"> Silver Membership </label>
-                <!-- <label><input type="radio" name="membership" id="bronze-membership"> Bronze Membership </label> -->
-                <!-- how to add () within the lable? (non-profit organizations, fee) -->
-                <label><input type="radio" name="membership" id="np-membership">Non-Profit Member, free </label>
-                
+                <label><input type="radio" name="membership" id="np-membership"> Non-Profit Member - Free </label>
+                <label><input type="radio" name="membership" id="silver-membership"> Silver Membership - $500</label>
+                <label><input type="radio" name="membership" id="gold-membership"> Gold Membership - $1,000</label>
                 <!-- An input element of type (hidden) with a name and id. This field contains the current date/time in millisecond format Date.now(), which records the date and time that the form was loaded by the user. You must use JavaScript to set the value of this field. -->
                 <!-- <label><input type="hidden" name="submit-date" id="submit-date"><span id="submition"></span></label> -->
                 <input type="hidden" name="submition" id="submition">
@@ -93,7 +89,7 @@
          <div class="levels">
             <section class="card">
                 <!-- is 'h2' the right use here> -->
-                <h3>Non-Profit Member - Free</h3>
+                <h3>Non-Profit Member</h3>
             <!-- membership info crated by ai, copilot -->
                <ul>
                     <li>Networking Opportunities: Access to special networking events to connect with local businesses and other non-profits.</li>
@@ -113,7 +109,7 @@
                  </ul>
             </section> -->
             <section class="card">
-                <h3>Silver Membership - $500</h3>
+                <h3>Silver Membership</h3>
                <ul>
                     <li>Enhanced Directory Listing: Highlighted and detailed listing in the Chamber’s online directory.</li>
                     <li>Marketing Features: Opportunity to feature in Chamber newsletters and social media shout-outs.</li>
@@ -123,7 +119,7 @@
                  </ul>
             </section>
             <section class="card">
-                <h3>Gold Membership $1,000</h3>
+                <h3>Gold Membership</h3>
                <ul>
                     <li>Premier Networking Access: VIP invitations to exclusive networking events and luncheons with local leaders.</li>
                     <li>Premium Directory Placement: Top-tier placement and featured listing in the Chamber’s online directory.</li>
