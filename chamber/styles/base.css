@@ -66,14 +66,14 @@ main {
 
 /* fix this position */
 /* look at .banner to see formatting ideas */
-.hero button {    
+.hero a {    
     position: absolute;
     padding: 2rem;
     border-radius: 2rem;
-    top: 300px;
-    left: 50px;
+    top: 370px;
+    left: 30px;
     color: rgb(255, 255, 255);
-    background-color: rgba(75, 75, 121, 0.839); 
+    background-color: rgba(27, 11, 146, 0.929); 
     /* max-width: 100px; not this**** */
     /* this is important******* */
     max-width: fit-content;
@@ -83,6 +83,7 @@ main {
     border:#cf9c6a;
     font-size: 1.5rem;
     white-space: nowrap;
+    text-decoration: none;
 }
 
 
