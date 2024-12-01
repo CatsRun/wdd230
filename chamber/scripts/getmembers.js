@@ -18,7 +18,7 @@ async function getMemberData() {
 getMemberData();
 
 const displayMembers = (members) => {    
-    members.forEach((member) => {
+    members.forEach((members) => {
         // try printing foreach [0] 
 
         // card element
@@ -43,14 +43,14 @@ const displayMembers = (members) => {
         // newListItem.textContent =name;
         // newListItem.textContent =name;
 
-        name.textContent = member.name;
-        logo.textContent = member.img;
+        name.textContent = members.name;
+        logo.textContent = members.img;
 
-        address.textContent = member.address;        
-        phone.textContent = member.phone;
-        website.setAttribute("href", member.website_url);
-        website.textContent = `${member.name} website`;
-        level.textContent = `Membership Level: ${member.level}`;
+        address.textContent = members.address;        
+        phone.textContent = members.phone;
+        website.setAttribute("href", members.website_url);
+        website.textContent = `${members.name} website`;
+        level.textContent = `Membership Level: ${members.level}`;
 
         chamberMembers.appendChild(name);
         card.appendChild(logo);
