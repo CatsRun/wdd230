@@ -147,9 +147,7 @@
 /* --------------join------------- */
 
     /* why does this not work? */
-    .join-form h2{
-        display:inline-block;
-    }
+  
 
     .joinpage {
         grid-template-columns: 1fr 1fr;
@@ -165,6 +163,11 @@
         margin: 2rem;
     }
 
+  .joinpage h2{
+        /* display:inline-block; */
+        grid-column: 1/3;
+        text-align: center;
+    }
 
 
 /* ----------- banner ------------ */
