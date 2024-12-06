@@ -18,7 +18,7 @@ async function getMemberData() {
 getMemberData();
 
 const displayMembers = (members) => {    
-    members.forEach((members) => {
+    members.forEach((members => {
         // try printing foreach [0] 
 
         // card element
@@ -66,7 +66,7 @@ const displayMembers = (members) => {
         //     chamberMembers.appendChild(card);
         // });
         // set the answers to a variable and foreach that variable into sections or cards
-    });
+    }));
 }
 
 displayMembers();

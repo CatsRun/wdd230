@@ -1,0 +1,76 @@
+
+body {
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(255, 169, 31, 0.157);
+
+}
+
+header {
+   background-color: rgb(61, 232, 232); 
+   background-image: linear-gradient(red, yellow);
+   overflow: hidden;
+   text-transform: uppercase;
+}
+
+footer {
+    text-align: center;
+    padding: 2em;
+    background-image: linear-gradient( yellow, red);
+    overflow: hidden;
+}
+
+/* removes the underline for links */
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+/* ---------navigation-------- */
+
+.nav {
+    display: flex;
+	flex-direction: column;
+	list-style: none;    
+
+}
+
+.navigation{
+    /* display: flex; */
+   list-style: none; 
+   justify-content: space-around;
+   
+}
+
+.navigation li {
+    /* display: block; */
+    font-size: 1.5rem;
+    padding: .5rem;
+    text-align: center;
+    
+}
+
+
+
+/* --------button-------- */
+
+.link {
+    border: solid;
+    background-color: rgb(93, 225, 239);
+    color: aliceblue;
+    text-wrap: none;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 30px;
+    border-color: darkgray;
+    white-space: nowrap;
+    background-image: linear-gradient( darkgray, white, darkgray)
+    
+    
+}
+
+button:hover {
+    /* add here */
+    background-color: blue;
+}
