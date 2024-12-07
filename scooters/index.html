@@ -46,9 +46,11 @@
     </header>
 
     <main>
+        <div class="banner"></div>
+
         <div class="hero">
             <h1>Scoots</h1>
-            <h2>Come Ride With Us</h2>
+            <h2>Come Ride With Us!</h2>
             <picture class="island-pic">
                 <!-- have different img for moble and desktop, look at other project -->
                 <!-- what are best practices for labing imgs? -->
@@ -58,7 +60,7 @@
             </picture>
         </div>
         <!-- <button><a href="reservations.html">Reservations</a></button> -->
-        <div class="link"><a href="reservations.html">Reservation Now!</a></div>
+        <div class="link"><a href="reservations.html">Reserve Now!</a></div>
 
         <!-- social media link -->
         <div id="socialmedia">
@@ -67,13 +69,11 @@
             <a href="http://instagram.com" target="_blank"><img src="images/logo-instagram.png" alt="Instagram logo" height="50"></a>
         </div>
 
-        <section class="cards">
+        <section class="cards" id="cards">
             <h2>Rental Information</h2>
-            <!-- pull from JSON to populate -->
-            <ul>
-                <li><span id="names"></span></li>
-                <li><span id="persons"></span></li>
-            </ul>
+            <!-- this is populated by rentals.js which pulls from rentals.json -->
+                <!-- <li><span id="names"></span></li>
+                <li><span id="persons"></span></li> -->
         </section>
 
 
@@ -100,8 +100,16 @@
         <p><a href="attributions.html">~Attributions~</a> | <a href="contact.html">Contact Us</a></p>
     </footer>
     <!-- <script src="scripts/getdates.js"></script> -->
-     <script src="scripts/weather-current.js"></script>
-     <script src="scripts/weather-forecast.js"></script>
-     <script src="scripts/rentals.js"></script>
+
+    <script src="scripts/weather-current.js"></script>
+    <script src="scripts/weather-forecast.js"></script>
+    
+    <script src="scripts/rentals.js"></script>
+
+
+
+<!-- this needs to load last so the other things load on the page and are not empty -->
+ <!-- is there a way to say which js file is loaded first? -->
+    <script src="scripts/alertwindow.js"></script>
 </body>
 </html>

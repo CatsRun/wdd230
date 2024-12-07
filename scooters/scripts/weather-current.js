@@ -13,9 +13,9 @@ function displayResults2(data) {
     // console.log(data)
     currentTemp.innerHTML = `${data.main.temp}&deg;F`; 
     currentHum.innerHTML = `${data.main.humidity}%`
-
+    // console.log(data.wind);
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-        // console.log(data.weather.main);
+    
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt',desc);

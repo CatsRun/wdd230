@@ -11,6 +11,18 @@
     justify-content: space-around;
 }
 
+/* ---------banner--------- */
+/* .banner {
+    width: 970px;
+    height: 250px;
+    width: fit-content;
+    min-width: 50px;
+    border: solid;
+    border-radius: 3rem;
+    border-width: 5px;
+    background-color: gray;
+} */
+
 /* footer {
     text-align: center;
     padding: 2em;
