@@ -41,27 +41,43 @@
                 <li><a href="contact.html">Contact Us</a></li>       
             </ul>
         </nav>
+
+        
     </header>
 
     <main>
-
-        <picture class="island-pic">
-            <!-- have different img for moble and desktop, look at other project -->
-             <!-- what are best practices for labing imgs? -->
-            <img src="" alt="">
-            <!-- add img of island, rental facilities. Make cards that change the img ever 8 sec -->
-             <p>app imgs here</p>
-        </picture>
+        <div class="hero">
+            <h1>Scoots</h1>
+            <h2>Come Ride With Us</h2>
+            <picture class="island-pic">
+                <!-- have different img for moble and desktop, look at other project -->
+                <!-- what are best practices for labing imgs? -->
+                <img src="" alt="">
+                <!-- add img of island, rental facilities. Make cards that change the img ever 8 sec -->
+                <p>app imgs here</p>
+            </picture>
+        </div>
         <!-- <button><a href="reservations.html">Reservations</a></button> -->
-        <div class="link"><a href="reservations.html">Make a Reservations</a></div>
-        <!-- button that links to the reservations page -->
+        <div class="link"><a href="reservations.html">Reservation Now!</a></div>
 
-<!-- social media link -->
+        <!-- social media link -->
+        <div id="socialmedia">
+            <a href="https://www.facebook.com" target="_blank"><img src="images/logo-facebook.png" alt="Facebook logo" height="50"></a>
+            <a href="https://x.com" target="_blank"><img src="images/logo-x.png" alt="X logo" height="50"></a>
+            <a href="http://instagram.com" target="_blank"><img src="images/logo-instagram.png" alt="Instagram logo" height="50"></a>
+        </div>
 
-
-
-
-
+        <section class="weather">
+            <p>Current temp <span id="current-temp"></span></p>
+            <p>Current humidity: <span id="current-humidity"></span></p>
+            <p>Tomorrow at 15:00 is will be: <span id="future-temp1">Forecast1</span></p>
+            <p>Tomorrow fix this : <span id="future-temp2">Forecast2</span></p>
+            <figure>
+                <img id="weather-icon" src="#" alt="Weather Placeholder">
+                <figcaption></figcaption>
+            </figure>
+        </section>
+        
 
 
 
@@ -69,9 +85,11 @@
     </main>
 
     <footer>
-        <p>&copy; <span id="currentYear"></span> | Angela Murray | WDD230 Final Project | Last Modified: <span id="lastModified"></span></p>
+        <p>&copy; <span id="currentYear"></span> | Angela Murray | WDD230 Final Project | <!--Last Modified:  <span id="lastModified"></span></p> -->
         <p><a href="attributions.html">~Attributions~</a> | <a href="contact.html">Contact Us</a></p>
     </footer>
-    <script src="scripts/getdates.js"></script>
+    <!-- <script src="scripts/getdates.js"></script> -->
+     <script src="scripts/weather-current.js"></script>
+     <script src="scripts/weather-forecast.js"></script>
 </body>
 </html>

@@ -11,6 +11,7 @@ header {
    background-image: linear-gradient(red, yellow);
    overflow: hidden;
    text-transform: uppercase;
+   padding: 2rem;
 }
 
 footer {
@@ -59,18 +60,26 @@ a {
     border: solid;
     background-color: rgb(93, 225, 239);
     color: aliceblue;
-    text-wrap: none;
     width: fit-content;
     padding: 1rem;
     border-radius: 30px;
     border-color: darkgray;
     white-space: nowrap;
-    background-image: linear-gradient( darkgray, white, darkgray)
+    background-image: linear-gradient( darkgray, white, darkgray);
     
     
 }
 
 button:hover {
     /* add here */
-    background-color: blue;
+    opacity: 70%;
 }
+
+a:hover{
+    opacity: 70%;
+}
+
+/* ---------social media------------ */
+/* #socialmedia a:hover{
+    opacity: 70%;
+} */
