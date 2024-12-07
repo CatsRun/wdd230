@@ -26,7 +26,7 @@ const displayRentals = (data) => {
 
         
         cards.appendChild(card);
-        console.log(rental);
+        // console.log(rental);
 
     });
 }

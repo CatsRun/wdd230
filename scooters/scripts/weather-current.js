@@ -4,7 +4,6 @@ const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 // const windspeed = document.querySelector('#windSpeed');
 const currentHum = document.querySelector('#current-humidity');
-
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=20.51&lon=-86.95&units=imperial&appid=bbe357ddc270c8f85a1e2c6b8dc5e569'
 
 // "units=imperial"
@@ -12,14 +11,21 @@ const url = 'https://api.openweathermap.org/data/2.5/weather?lat=20.51&lon=-86.9
 function displayResults2(data) {
     // console.log(data)
     currentTemp.innerHTML = `${data.main.temp}&deg;F`; 
-    currentHum.innerHTML = `${data.main.humidity}%`
-    // console.log(data.wind);
+    currentHum.innerHTML = `${data.main.humidity}%`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt',desc);
     captionDesc.textContent= `${desc}`
+
+
+    // ---------index alert window --------
+    const maxTemp = data.main.temp_max;
+    function alertTemp(){
+        alert(`Todays high will be ${maxTemp}°F`);
+        // console.log(maxTemp)
+    }    
+    alertTemp();
 }
 
 async function apiFetch() {
@@ -29,6 +35,7 @@ async function apiFetch() {
             const data = await response.json();
             // console.log(data.weather);
             displayResults2(data); 
+                        
         } else {
             throw Error (await response.text());
         }
