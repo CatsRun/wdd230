@@ -20,11 +20,12 @@ function displayResults2(data) {
 
 
     // ---------index alert window --------
+    // setTimeOut loads this after 2000milsec - after the page loads
     const maxTemp = data.main.temp_max;
-    function alertTemp(){
+    setTimeout(function alertTemp(){
         alert(`Todays high will be ${maxTemp}°F`);
         // console.log(maxTemp)
-    }    
+    },4000    )
     alertTemp();
 }
 
@@ -35,7 +36,7 @@ async function apiFetch() {
             const data = await response.json();
             // console.log(data.weather);
             displayResults2(data); 
-                        
+
         } else {
             throw Error (await response.text());
         }

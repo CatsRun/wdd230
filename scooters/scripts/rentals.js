@@ -1,32 +1,54 @@
 // pulling from rentals.JSON to populate Home rental info
-const names = document.querySelector('#names');
-const persons = document.querySelector('#persons');
+// const names = document.querySelector('#names');
+// const persons = document.querySelector('#persons');
 const rentalData = 'https://catsrun.github.io/wdd230/scooters/data/rentals.json';
-const cards = document.querySelector('#cards');
+const shortcards = document.querySelector('#shortcards');
+const longcards = document.querySelector('#longcards');
 
 
 const displayRentals = (data) => {
     // console.log(data.rental);
       data.rental.forEach((rental) => {
         // console.log(rental);
-        let card = document.createElement('section');
+
+        // -----index home page-------- shortcards
+        let cardShort = document.createElement('section');
         let rentalType = document.createElement('li');
         let maxPersons = document.createElement('li');
         // portrait.setAttribute('src', rental.imageurl);
         rentalType.textContent = `${rental.rentalType}`;
         maxPersons.textContent = `Max Riders: ${rental.maxPersons}`;
 
+        cardShort.appendChild(rentalType); 
+        cardShort.appendChild(maxPersons);
 
-    // work but are not looping
-        //  names.innerHTML = `${rental.rentalType} :name of scooter`;
-        //  persons.innerHTML = `${rental.maxPersons} :number of persons`;
-
-        card.appendChild(rentalType); 
-        card.appendChild(maxPersons);
-
+        shortcards.appendChild(cardShort);
         
-        cards.appendChild(card);
-        // console.log(rental);
+
+
+        // --------rentals page---------- longcards
+        let cardLong = document.createElement('section');
+        let reserveHalfDay = document.createElement('li'); 
+        let reserveFullDay = document.createElement('li');
+        let walkInHalfDay  = document.createElement('li');
+        let walkInFullDay  = document.createElement('li');
+
+        reserveHalfDay.textContent = `$ ${rental.reserveHalfDay}`
+        console.log(rental.reserveHalfDay);
+        reserveFullDay.textContent = `$ ${rental.reserveFullDay}`
+        walkInHalfDay.textContent = `$ ${rental.walkInHalfDay}`
+        walkInFullDay.textContent = `$ ${rental.walkInFullDay}`
+            
+        cardLong.appendChild(reserveHalfDay);
+        cardLong.appendChild(reserveFullDay);
+        cardLong.appendChild(walkInHalfDay);
+        cardLong.appendChild(walkInFullDay);
+
+        longcards.appendChild(cardLong);
+        
+
+
+
 
     });
 }
