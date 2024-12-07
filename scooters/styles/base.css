@@ -83,3 +83,20 @@ a:hover{
 /* #socialmedia a:hover{
     opacity: 70%;
 } */
+
+
+/* ----------cards--------- */
+
+section {
+    box-shadow: 0 0 10px rgb(26, 26, 23);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem 0;
+    padding: 1rem;
+    /* color handled in js dark-mide */
+    /* background-color: beige; */
+    /* display: grid;
+    grid-template-columns: 1fr; */
+    /* grid-gap: 1rem; */
+
+}

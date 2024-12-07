@@ -2,11 +2,10 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
-const windspeed = document.querySelector('#windSpeed');
+// const windspeed = document.querySelector('#windSpeed');
 const currentHum = document.querySelector('#current-humidity');
 
-
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=38.27&lon=-77.18&units=imperial&appid=bbe357ddc270c8f85a1e2c6b8dc5e569'
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=20.51&lon=-86.95&units=imperial&appid=bbe357ddc270c8f85a1e2c6b8dc5e569'
 
 // "units=imperial"
 // apiKey=bbe357ddc270c8f85a1e2c6b8dc5e569
@@ -14,10 +13,9 @@ function displayResults2(data) {
     // console.log(data)
     currentTemp.innerHTML = `${data.main.temp}&deg;F`; 
     currentHum.innerHTML = `${data.main.humidity}%`
-    // use this when fixing the windspeed
-    // console.log(data.wind);
+
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    
+        // console.log(data.weather.main);
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt',desc);
