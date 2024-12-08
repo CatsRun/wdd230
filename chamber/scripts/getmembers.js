@@ -98,10 +98,11 @@ const baseURL = "https://catsrun.github.io/wdd230/";
 const membersURL = "https://catsrun.github.io/wdd230/chamber/data/members.json"; 
 const gridButton = document.querySelector("#membergrid"); 
 const listButton = document.querySelector("#memberlist"); 
-const chamberMembers = document.getElementById("chambermembers"); 
+const chamberMembers = document.getElementById("chambermembers");
+
 const displayMembers = (members) => 
     { members.forEach((member) => { 
-    let card = document.createElement('div'); 
+    let card = document.createElement('section'); 
     let name = document.createElement('h3'); 
     let logo = document.createElement('img'); 
     let address = document.createElement('p'); 
@@ -109,13 +110,16 @@ const displayMembers = (members) =>
     let website = document.createElement("a"); 
     let level = document.createElement('p'); 
     let other = document.createElement('p'); 
+
     name.textContent = member.name; 
     logo.setAttribute('src', member.image); 
     address.textContent = member.address; phone.textContent = member.phone; 
     website.setAttribute("href", member.url); 
     website.textContent = `${member.name} website`; 
     level.textContent = `Membership Level: ${member.level}`; 
-    other.textContent = member.other; card.appendChild(name); 
+    other.textContent = `Type of Business: ${member.other}`; 
+    
+    card.appendChild(name); 
     card.appendChild(logo); 
     card.appendChild(address); 
     card.appendChild(phone); 

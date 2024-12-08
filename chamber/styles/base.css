@@ -351,3 +351,59 @@ figcaption {
 .banner_close:hover {
     background: #007e65;
   }
+
+  /* --------directory toggle ------------*/
+  /* from codepen  */
+  /* .membergrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+}
+
+.membergrid section {
+	text-align: center;
+}
+
+.membergrid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+}
+
+.membergrid section > * {
+	margin: 0.1rem;
+}
+
+.membergrid h3 {
+	font-family: "Caveat", cursive;
+}
+
+.memberlist {
+	display: flex;
+	flex-direction: column;
+}
+
+.memberlist section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.memberlist section > * {
+	margin: 0 1rem;
+}
+
+.memberlist section img { */
+	/* display: none;  */
+    /* smaller viewports only */
+/* }
+
+.memberlist section h3 {
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.memberlist section:nth-child(even) {
+	background-color: #bed;
+} */

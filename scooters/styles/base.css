@@ -8,7 +8,7 @@ body {
 
 header {
    background-color: rgb(61, 232, 232); 
-   background-image: linear-gradient(red, yellow);
+   background-image: linear-gradient(rgba(255, 0, 0, 0.731), rgba(255, 255, 0, 0.873));
    overflow: hidden;
    text-transform: uppercase;
    padding: 2rem;
@@ -16,8 +16,8 @@ header {
 
 footer {
     text-align: center;
-    padding: 2em;
-    background-image: linear-gradient( yellow, red);
+    padding: 1.5rem;
+    background-image: linear-gradient( rgb(255, 238, 2), rgb(0, 229, 255));
     overflow: hidden;
 }
 
