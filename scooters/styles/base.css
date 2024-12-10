@@ -2,7 +2,7 @@
 body {
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: rgba(255, 169, 31, 0.157);
+    background-color: rgb(255, 255, 255);
 
 }
 
@@ -99,4 +99,71 @@ section {
     grid-template-columns: 1fr; */
     /* grid-gap: 1rem; */
 
+}
+
+/* ------------rentals--------- */
+.cards{
+    display: grid;
+    grid-template-columns: 1fr ;
+    
+
+}
+
+.cards section {
+    margin: 1rem;
+}
+
+.cards h2 {
+    text-align: center;
+}
+
+/* ------------rentals table--------- */
+
+/* ***************change this from :root*************** */
+:root {
+	--back: rgb(87, 66, 28);
+  --back2: #CCBEAA;
+  --foredark: hsla(0,0%,10%,1);
+	--forelight: hsla(0,0%,100%,1);
+	--border: hsla(0,0%,20%,.8);
+	--borderlight: hsla(0,0%,33%,.3);
+	--shadow: hsl(0,0%,50%);
+	--zebra: hsl(0, 0%, 93%, 1);
+}
+
+table {
+	margin: 10px auto;
+	border: thin solid var(--border);
+	box-shadow: 0 0 10px var(--shadow);
+	border-collapse: collapse;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+	color: var(--back);
+	font-size: 1rem;
+}
+
+tr:first-child th, .highlight {
+	background-color: var(--back);
+	color: var(--forelight);
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid var(--borderlight);
+}
+
+th {
+	background-color: var(--back2);
+	font-size: larger;
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: var(--zebra);
 }

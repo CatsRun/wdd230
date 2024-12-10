@@ -33,7 +33,17 @@ a {
     font-weight: 700;
 }
 
+/* ------------rentals--------- */
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
 
+}
+
+.cards h2 {
+    grid-column: 1/3;
+}
 
 
 
