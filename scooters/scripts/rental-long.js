@@ -2,6 +2,7 @@
 
 const longRentalData = 'https://catsrun.github.io/wdd230/scooters/data/rentals.json';
 
+
 const displayRentalsLong = (data) => {
     // console.log(data.rental);
       data.rental.forEach((rental) => {

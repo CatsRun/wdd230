@@ -42,7 +42,56 @@
         </nav>
     </header>
 
-    <main></main>
+    <main>
+
+        <form method="get" action="thankyou.html">
+        <div class="form" id="reservation-form">
+            <fieldset>
+                <!-- use :root to style legend padding on r and l -->
+                <legend>Contact Information - Who will be driving?</legend>
+                    <!-- home state or country*,  -->
+                     <!-- cruiseline , if applicable -->
+
+                    <label>First Name* <input type="text" name="fname"  id="fname" required></label>
+                    <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                    
+                    <!-- <label>Title / Position* <input type="text" name="title" id="title" title="At least 8 letters long. Only letters." pattern="[a-zA-Z ]{7,}" required></label> -->
+                    <label>Email* <input type="email" name="email" id="email" placeholder="abc123@acb.com" required></label>
+                    <label>Moble Number* <input type="tel" name="moble" id="moble" placeholder="1235551234" title="no dashes" pattern="[0-9,-]{10,13}" required></label>
+                </fieldset>
+
+                <fieldset id="rentals-names">
+                    <legend>Rental Information- What will you ride?</legend>
+                    <!-- number of drivers -->
+                     <!--  total mun of riders, including drivers -->
+                       <!-- select vehicles, rental type -->
+
+                    <label id="rentals-name"><input type="checkbox" name="rentals-name" > </label>
+                    <!-- <label><input type="radio" name="membership" id="silver-membership"> Silver Membership - $500</label>
+                    <label><input type="radio" name="membership" id="gold-membership"> Gold Membership - $1,000</label> -->
+                    <!-- An input element of type (hidden) with a name and id. This field contains the current date/time in millisecond format Date.now(), which records the date and time that the form was loaded by the user. You must use JavaScript to set the value of this field. -->
+                    <!-- <label><input type="hidden" name="submit-date" id="submit-date"><span id="submition"></span></label> -->
+                    <input type="hidden" name="submition" id="submition">
+                
+                </fieldset>
+
+                <fieldset>
+                    <legend>Schedule - When is you adventure?</legend>
+                        <!-- date of rental -->
+                         <!-- special requests -->
+            </fieldset>    
+
+
+                
+                <button type="submit" id="joinbutton">Start Your Adventue</button>
+        </div>
+        </form>
+
+
+
+
+
+    </main>
 
     <footer>
         <p>&copy; <span id="currentYear"></span> | Angela Murray | WDD230 Final Project | Last Modified: <span id="lastModified"></span></p>
@@ -50,5 +99,6 @@
         <p><a href="attributions.html">~Attributions~</a> | <a href="contact.html">Contact Us</a></p>
     </footer>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/reservations.js"></script>
 </body>
 </html>

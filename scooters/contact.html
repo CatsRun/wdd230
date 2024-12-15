@@ -42,7 +42,47 @@
         </nav>
     </header>
 
-    <main></main>
+    <main>
+        <h1>Contact Us</h1>
+        <section class="card">
+            <p>We would love to here from you</p>
+            <ul>
+                <li>Address</li>
+                <li>Phone: 800-555-7324</li>
+                <li>Fax: 800-555-7323</li>
+
+            </ul>
+        </section>
+        <section class="card" id="contact-form">
+            <!-- <div id="formmessage"></div> -->
+            
+            <!-- sould the form method be 'get' because we are using Github, or 'post' because there is sensative info? -->
+            <form method="get" action="record.html" class="user-form">
+                <fieldset>
+                    <legend> Send us a mesage </legend>
+                    <label>First Name* <input type="text" id="firstname" name="firstname" required></label>
+                    <label>Last Name* <input type="text" id="lastname" name="lastname" required></label>
+                    <label>Phone Number* <input type="tel" name="phone" id="phone" placeholder="123-555-1234" title="no dashes" pattern="[0-9,-]{10,13}" required></label>
+                    <label>Country code<input type="number" name="counrty-code" id="counrty-code" placeholder="001" pattern="[0-9,-]{10,13}" required></label>
+                    <label>Address<input type="text" id="address" name="address" placeholder="Address line 1"></label>
+                    <label>Address<input type="text" id="address" name="address" placeholder="Address line 2"></label>
+                    <label>Email* <input type="email" id="email" name="email" title="What is your counrty code?" pattern="[0-9-]+@" required></label>
+                    <label>Reservation Number <input type="text" id="resnumber" name="resnumber" ></label>
+                    <label>How can we help? <textarea name="inquiry " id="inquiry" rows="3"></textarea></label>
+                        
+                
+                </fieldset>
+                <!-- when choosing what to put on a submit button ask "I want to..." the answer is that you put on the button -->           
+                <input type="submit" value="Send message 📨">
+
+            </form>
+
+
+        </section>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d201259.77952899312!2d-87.02036620734346!3d20.396052866524467!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1sen!2sus!4v1734033641088!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </main>
 
     <footer>
         <p>&copy; <span id="currentYear"></span> | Angela Murray | WDD230 Final Project | Last Modified: <span id="lastModified"></span></p>

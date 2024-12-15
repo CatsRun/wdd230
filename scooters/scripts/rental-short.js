@@ -25,7 +25,7 @@ const displayRentals = (data) => {
         cardShort.appendChild(maxPersons);
 
         shortcards.appendChild(cardShort);
-        console.log(cardShort);
+        // console.log('cardShort');
     });
 }        
 
