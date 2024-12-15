@@ -12,13 +12,9 @@ const displayRentalsRes = (data) => {
 
         // -----reservation page-------- shortcards
         // let inPut = document.createElement('label');
-        let rentalType = document.createElement('li');
-        let maxPersons = document.createElement('p');
 
-        let rentalOption = document.createElement('li');
         // let formLabel = document.createElement('label');
-        let checkBox = document.createElement('input');
-        let box = checkBox.setAttribute('type','checkbox');
+
         // rentalType.setAttribute("colspan",3);
         // portrait.setAttribute('src', rental.imageurl);
 
@@ -27,7 +23,7 @@ const displayRentalsRes = (data) => {
         
         // maxPersons.textContent = ` Max Riders: ${rental.maxPersons}`;
 
-        rentalOption.textContent = ` ${rental.rentalType} Max Riders: ${rental.maxPersons}`;
+
         // console.log(rentalOption)
         // inPut.appendChild(rentalType);
 
@@ -36,20 +32,24 @@ const displayRentalsRes = (data) => {
         // checkBox.appendChild(rentalOption);
         // formLabel.appendChild(rentalType);
 
-    // this works but places the bot after the words
-        // rentalType.appendChild(maxPersons);
-        rentalOption.appendChild(checkBox);
 
-        shortcards2.appendChild(rentalOption);
+        // -----reservations page-------- shortcards2
+
+        let cardShort = document.createElement('option');
+        let rentalType = document.createElement('p');
+        let maxPersons = document.createElement('p');
+        // portrait.setAttribute('src', rental.imageurl);
+        rentalType.textContent = `${rental.rentalType}`;
+        maxPersons.textContent = `Max Riders: ${rental.maxPersons}`;
+
+        // cardShort.appendChild(checkBox);
+        cardShort.appendChild(rentalType); 
+        cardShort.appendChild(maxPersons);
+
+        shortcards2.appendChild(cardShort);
 
 
-    // trying new things to get it to work
-        rentalOption.appendChild(checkBox);
-
-        shortcards2.appendChild(checkBox);
-
-
-        // console.log(rentalType);
+        
     });
 }        
 
