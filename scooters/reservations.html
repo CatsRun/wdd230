@@ -44,7 +44,7 @@
 
     <main>
 
-        <form method="get" action="thankyou.html">
+        <form method="get" action="submitform.html">
         <div class="form" id="reservation-form">
             <fieldset>
                 <!-- use :root to style legend padding on r and l -->
@@ -58,37 +58,35 @@
                     <!-- <label>Title / Position* <input type="text" name="title" id="title" title="At least 8 letters long. Only letters." pattern="[a-zA-Z ]{7,}" required></label> -->
                     <label>Email* <input type="email" name="email" id="email" placeholder="abc123@acb.com" required></label>
                     <label>Moble Number* <input type="tel" name="moble" id="moble" placeholder="1235551234" title="no dashes" pattern="[0-9,-]{10,13}" required></label>
+                    <label>Country code<input type="text" name="councode"  id="councode" pattern="[0-9]" placeholder="001"></label>
+                    <label>Home State or Country <input type="text" name="location" id="location" placeholder="Texas, USA" required></label>
+                    <label>Cruise Line<input type="text" name="cruise" id="cruise" placeholder=" Dimond Cruise" ></label>
+                    
                 </fieldset>
 
                 <fieldset id="rentals-names">
-                    <legend>Rental Information- What will you ride?</legend>
+                    <legend>Rental Information </legend>
+                    <label>Date of Rental*<input type="date" name="rentdate"  id="rentdate" required></label>
+                    <label>Return date*<input type="date" name="returndate"  id="returndate" required></label>
+       
                     <!-- number of drivers -->
                      <!--  total mun of riders, including drivers -->
                        <!-- select vehicles, rental type -->
 
-                    <label id="rentals-names"><select name="rentals-name" id="rentals-name"></select> </label>
-<!-- <input type="checkbox" name="rentals-name" > -->
+                       <!-- this is populated from reservation.js, the 'option' here is teh placeholder for teh js because without it html checker was throwing an error  -->
+                    <label id="rental-name">Rental Type - What will you ride?*<select name="rentals-name" id="rentals-name" size="1" required><option value="" >Choose one</option></select> </label>
+                    <label>Number of vehicles<input type="number" name="numveh"  id="numveh" value="0" max="10" min="1"></label>
 
-                    <!-- <label><input type="radio" name="membership" id="silver-membership"> Silver Membership - $500</label>
-                    <label><input type="radio" name="membership" id="gold-membership"> Gold Membership - $1,000</label> -->
-                    <!-- An input element of type (hidden) with a name and id. This field contains the current date/time in millisecond format Date.now(), which records the date and time that the form was loaded by the user. You must use JavaScript to set the value of this field. -->
-                    <!-- <label><input type="hidden" name="submit-date" id="submit-date"><span id="submition"></span></label> -->
+                    <label>Special requests <textarea name="inquiry " id="inquiry" rows="3" placeholder="Drop off at Happy-Days Resort"></textarea></label>
                     <input type="hidden" name="submition" id="submition">
                 
                 </fieldset>
 
-                <fieldset>
-                    <legend>Schedule - When is you adventure?</legend>
-                        <!-- date of rental -->
-                         <!-- special requests -->
-            </fieldset>    
-
-
-                
+                             
                 <button type="submit" id="joinbutton">Start Your Adventue</button>
         </div>
         </form>
-
+        <p class="form-subtext">* indicates required fields</p>
 
 
 

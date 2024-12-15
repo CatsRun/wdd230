@@ -40,7 +40,7 @@ const displayRentalsRes = (data) => {
         let maxPersons = document.createElement('p');
         // portrait.setAttribute('src', rental.imageurl);
         rentalType.textContent = `${rental.rentalType}`;
-        maxPersons.textContent = `Max Riders: ${rental.maxPersons}`;
+        maxPersons.textContent = `, Max Riders: ${rental.maxPersons}`;
 
         // cardShort.appendChild(checkBox);
         cardShort.appendChild(rentalType); 
