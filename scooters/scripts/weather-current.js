@@ -2,9 +2,10 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
+const weatherMain = document.querySelector('#weatherMain');
 // const windspeed = document.querySelector('#windSpeed');
 const currentHum = document.querySelector('#current-humidity');
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=20.51&lon=-86.95&units=imperial&appid=bbe357ddc270c8f85a1e2c6b8dc5e569'
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=20.51&lon=-86.95&units=imperial&appid=bbe357ddc270c8f85a1e2c6b8dc5e569';
 
 // "units=imperial"
 // apiKey=bbe357ddc270c8f85a1e2c6b8dc5e569
@@ -12,21 +13,23 @@ function displayResults2(data) {
     // console.log(data)
     currentTemp.innerHTML = `${data.main.temp}&deg;F`; 
     currentHum.innerHTML = `${data.main.humidity}%`;
+    weatherMain.innerHTML = `${data.weather[0].main}`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt',desc);
     captionDesc.textContent= `${desc}`
-
-
+    // console.log(data.weather[0].main);
+    // console.log('current temp')
+    // console.log(data.main.temp)
     // ---------index alert window --------
-    // setTimeOut loads this after 2000milsec - after the page loads
+    // setTimeOut loads this after 4000 milsec - after the page loads. THis allows the rest of the page to load before the msg pops up. Otherwide it will prevent the page from loading.
     const maxTemp = data.main.temp_max;
     setTimeout(function alertTemp(){
         alert(`Todays high will be ${maxTemp}°F`);
+        // console.log('max temp')
         // console.log(maxTemp)
     },4000    )
-    alertTemp();
 }
 
 async function apiFetch() {
