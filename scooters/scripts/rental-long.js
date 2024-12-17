@@ -1,13 +1,15 @@
 // Rental info Long pst
 
 const longRentalData = 'https://catsrun.github.io/wdd230/scooters/data/rentals.json';
-
+const scootersImg = document.querySelector('.scooter-img');
 
 const displayRentalsLong = (data) => {
     // console.log(data.rental);
       data.rental.forEach((rental) => {
 
         // portrait.setAttribute('src', rental.imageurl);
+        // scootersImg.setAttribute('src', rental.imageurl)
+
 
         // --------rentals page---------- longcards
         let cardLong = document.createElement('section');
