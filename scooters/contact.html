@@ -28,10 +28,10 @@
 <body>
     <header>
         <nav>
-            <picture class="hero">
+            <!-- <picture class="hero"> -->
                 <!-- add img of beach -->
-                <img src="" alt="">
-            </picture>
+                <!-- <img src="" alt="">
+            </picture> -->
             <ul class="navigation">                
                 <li><a href="index.html">Home</a></li>
                 <li><a href="rentals.html">Rentals</a></li>
@@ -43,8 +43,9 @@
     </header>
 
     <main>
-        <h1>Contact Us</h1>
-        <section class="card">
+        <h1>Scoots: Contact Us</h1>
+        <div class="card">
+        <section >
             <h2>Scoots: Centro de Cozume</h2>
             <h3>Playa del Carmen-Cozumel Ferry dock in el Centro de Cozume</h3>
             <ul>
@@ -55,7 +56,7 @@
             </ul>
         </section>
 
-        <section class="card">
+        <section >
             <!-- <h2>We would love to here from you</h2> -->
             <h2>Scoots: Puerta Maya</h2>
             <h3>Near the Terminal Puerta Maya</h3>
@@ -66,12 +67,12 @@
 
             </ul>
         </section>
-
+    </div>
         <section class="card" id="contact-form">
             <!-- <div id="formmessage"></div> -->
             
             <!-- sould the form method be 'get' because we are using Github, or 'post' because there is sensative info? -->
-            <form method="get" action="contact-form.html" class="user-form">
+            <form method="get" action="contact-form.html" class="form" id="user-form">
                 <fieldset>
                     <legend> Send us a mesage </legend>
                     <label>First Name* <input type="text" id="firstname" name="firstname" required></label>
@@ -87,7 +88,8 @@
                 
                 </fieldset>
                 <!-- when choosing what to put on a submit button ask "I want to..." the answer is that you put on the button -->           
-                <input type="submit" value="Send message 📨">
+                <button type="submit" id="contactbutton">Send message 📨</button>
+                <!-- <input type="submit" value="Send message 📨"> -->
 
             </form>
 
