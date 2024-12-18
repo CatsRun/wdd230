@@ -71,6 +71,8 @@ const displayRentalsLong = (data) => {
         pic.setAttribute('src', rental.rentalImg)
         pic.setAttribute('loading', 'lazy');
         pic.setAttribute('width', '250');
+        pic.setAttribute('height', 'auto');
+        pic.setAttribute('max-width', '100%');
         pic.setAttribute('alt', `${rental.rentalType}`);
         pic.setAttribute('figcaption', `${rental.rentalType}`);
         // console.log(pic);
@@ -118,7 +120,7 @@ const displayRentalsLong = (data) => {
         trTablRow2.appendChild(walkInHalfDay);
 
         // ---------img row 5--------
-        tbodyBody.appendChild(trTablRow5);
+        // tbodyBody.appendChild(trTablRow5);
         cardLong.appendChild(pic);
         // trTablRow5.appendChild(scootersImg1);
         // trTablRow5.appendChild(scootersImg2);

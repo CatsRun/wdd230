@@ -16,4 +16,4 @@ function printLastModefied(){
     return dateFormated;
 }
 
-document.getElementById("lastModified").innerHTML = printLastModefied();
+// document.getElementById("lastModified").innerHTML = printLastModefied();

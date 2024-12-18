@@ -29,6 +29,10 @@ a {
     font-weight: 400;
 }
 
+p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
 /* ---------navigation-------- */
 
 .nav {
@@ -64,13 +68,13 @@ h1 {
 /* --------button-------- */
 
 .link {
-    position: absolute;
+    /* position: absolute; */
     border: solid;
     background-color: rgb(93, 225, 239);
     color: aliceblue;
     width: fit-content;
     padding: 1rem;
-    border-radius: 30px;
+    border-radius: 20px;
     border-color: darkgray;
     white-space: nowrap;
     background-image: linear-gradient( darkgray, white, darkgray);
@@ -128,13 +132,25 @@ section {
 
  .island-pic{
     display: grid;
-    grid-template-columns: 1fr ;
+    /* grid-template-columns: 1fr ; */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     margin: 1rem;
     padding: 1rem;
-    position: relative;
+    grid-gap: 1rem;
+    border-radius: 6px;
+    /* position: relative; */
     height: auto;
-    width: 90%;
+    width: 100%;
+    /* max-width: 200; */
+    
 
+    
+}
+
+.island-pic img{
+    border-radius: 6px;
+    padding: 1rem;
+    /* background-color: #555; */
 }
 
 /* ------------rentals--------- */
@@ -230,11 +246,9 @@ iframe {
 } */
 
 /* ------------rentals table--------- */
-
-/* ***************change this from :root*************** */
 :root {
-	--back: rgb(87, 66, 28);
-  --back2: #CCBEAA;
+	--back: rgb(28, 40, 87);
+  --back2: #acaacc92;
   --foredark: hsla(0,0%,10%,1);
 	--forelight: hsla(0,0%,100%,1);
 	--border: hsla(0,0%,20%,.8);
@@ -248,6 +262,8 @@ table {
 	border: thin solid var(--border);
 	box-shadow: 0 0 10px var(--shadow);
 	border-collapse: collapse;
+    border-radius: 6px;
+    overflow: hidden;
 }
 
 caption {
@@ -278,4 +294,10 @@ td {
 
 tbody tr:nth-child(odd) {
 	background-color: var(--zebra);
+}
+
+table img{
+    /* justify-content: center; */
+    margin: auto;
+    background-color: #555;
 }

@@ -13,6 +13,15 @@ const displayRentals = (data) => {
       data.rental.forEach((rental) => {
         // console.log(rental);
 
+        // images of rentals
+        let pic = document.createElement('img');
+        pic.setAttribute('src', rental.rentalImg)
+        pic.setAttribute('loading', 'lazy');
+        pic.setAttribute('width', '250');
+        pic.setAttribute('alt', `${rental.rentalType}`);
+        pic.setAttribute('figcaption', `${rental.rentalType}`);
+        // console.log(pic);
+
         // -----index home page-------- shortcards
         let cardShort = document.createElement('section');
         let rentalType = document.createElement('p');
@@ -21,6 +30,8 @@ const displayRentals = (data) => {
         rentalType.textContent = `${rental.rentalType}`;
         maxPersons.textContent = `Max Riders: ${rental.maxPersons}`;
 
+        
+        cardShort.appendChild(pic);
         cardShort.appendChild(rentalType); 
         cardShort.appendChild(maxPersons);
 
