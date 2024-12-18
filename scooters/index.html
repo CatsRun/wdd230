@@ -47,29 +47,28 @@
         <div class="hero">
             
             <!-- <h2>Come Ride With Us!</h2> -->
-            <picture class="island-pic">
+                <section class="card" id="island-p">
                 <p >Come ride with us on an adventure through ocean waves and beautiful trees on the tropical island of Cozumel. Located in the western Caribbean Sea, off the coast of Mexico, this picturesque retreat will give you everything you dream of. 
                 With two convenient locations we are here to provide you with the freedom to explore. We are located near the Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel and near the Terminal Puerta Maya further south along the coast. We rent motor scooters, jeeps, and side-by-sides ATVs. <br>
-                <button class="link"><a href="reservations.html">Reservations</a></button>
                 </p>
-                <!-- have different img for moble and desktop, look at other project -->
-                <!-- what are best practices for labing imgs? -->
+                <a href="reservations.html" class="link">Reservations</a>
+                </section>
+            <section class="island-pic">
+                <picture><img src="images/beach-umbrella-small.webp" alt="Beach with umbrella" loading="lazy" width="300"></picture>
+                <picture><img src="images/tidepools-small.webp" alt="Ocean tidepools" loading="lazy" width="300"></picture>
+                <picture><img src="images/scooter-parked-plexels.webp" alt="parked scooters" loading="lazy" width="300"></picture>
+                <picture><img src="images/ocean-road-small.webp" alt="ocean road" loading="lazy" width="300"></picture>
+                <picture><img src="images/cruzeline-small-plexels.webp" alt="Cruzeship" loading="lazy" width="300"></picture>
+                <picture><img src="images/road-small.webp" alt=" tree lined road" loading="lazy" width="300"></picture>
+                <picture><img src="images/scooters-plexels.webp" alt="scooters" loading="lazy" width="300"></picture>
+               <!-- <img src="images/ocean-rocks-small.webp" alt="ocean rocks" loading="lazy" width="300"> -->
                 
-                <img src="images/beach-umbrella-small.webp" alt="Beach with umbrella" loading="lazy" width="300">
-                <img src="images/tidepools-small.webp" alt="Ocean tidepools" loading="lazy" width="300">
-                <img src="images/scooter-parked-plexels.webp" alt="parked scooters" loading="lazy" width="300">
-                <img src="images/ocean-road-small.webp" alt="ocean road" loading="lazy" width="300">
-                <img src="images/road-small.webp" alt=" tree lined road" loading="lazy" width="300">
-                <img src="images/scooters-plexels.webp" alt="scooters" loading="lazy" width="300">
-                <img src="images/cruzeline-small-plexels.webp" alt="Cruzeship" loading="lazy" width="300">
-                <!-- <img src="images/ocean-rocks-small.webp" alt="ocean rocks" loading="lazy" width="300"> -->
-                
-                <img src="images/storefront-bing4.webp" alt="store front" loading="lazy" width="300">
-                <img src="images/storefront-bing2.webp" alt="Cruzeship" loading="lazy" width="300">
+                <picture><img src="images/storefront-bing4.webp" alt="store front" loading="lazy" width="300"></picture>
+                <picture><img src="images/storefront-bing2.webp" alt="Cruzeship" loading="lazy" width="300"></picture>
 
                 <!-- add img of island, rental facilities. Make cards that change the img ever 8 sec -->
                 <!-- <p>app imgs here</p> -->
-            </picture>
+            </section>
         </div>
         <!-- <button class="link"><a href="reservations.html">Reservations</a></button> -->
         <!-- <div class="link"><a href="reservations.html">Reserve Now!</a></div> -->
@@ -90,7 +89,8 @@
         </section>
 
 <!-- weather -->
-        <section class="card" id="weather">
+        <section class="cards" id="weather">
+            <h2>Weather</h2>
             <p>Current Temperature: <span id="current-temp"></span></p>
             <p>Current Humidity: <span id="current-humidity"></span></p>
             <p>Current Conditions: <span id="weatherMain"></span></p>

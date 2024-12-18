@@ -48,6 +48,7 @@ p {
 .navigation li {
     display: block;
     font-size: 1.3rem;
+    font-weight:400;
     padding: .5rem;
     text-align: center;
     
@@ -70,8 +71,9 @@ h1 {
 .link {
     /* position: absolute; */
     border: solid;
-    background-color: rgb(93, 225, 239);
-    color: aliceblue;
+    /* background-color: rgb(93, 225, 239); */
+    /* color: black; */
+    /* color: aliceblue; */
     width: fit-content;
     padding: 1rem;
     border-radius: 20px;
@@ -147,19 +149,25 @@ section {
     /* background-color: #555; */
 }
 
-.island-pic p{
+#island-p {
+    grid-column: 1/3;
+}
+ 
+#island-p p{
     /* border-radius: 6px; */
     padding: 1rem;
     max-width: 320px;
     /* background-color: #555; */
 }
 
-.island-pic p::first-line {
+#island-p p::first-line {
     line-height: 2.5rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
   }
+
+
 /* ------------rentals--------- */
 .cards{
     display: grid;
@@ -228,7 +236,8 @@ section {
     background-color: #9c2c1307;
 }
 
-.form input:required:valid {
+.form input:required:valid,
+textarea:required:valid {
     border-left: solid 6px green;
     background-color: rgba(0, 128, 0, 0.131);
 }
@@ -256,7 +265,12 @@ iframe {
     overflow: hidden;
 
 }
-
+.form-submition {
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.2rem;
+    margin: 2rem;
+}
 /* #contact-form {
     width: fit-content;
 } */
