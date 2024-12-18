@@ -1,7 +1,6 @@
 {
     "rental": [
         {
-          "rentalImg": "images/honda-metropolitan.webp",  
         "rentalType": "Honda Metro Scooter",
         "maxPersons": "1",
                 "reserveHalfDay":  "20",
@@ -10,7 +9,6 @@
                 "walkInFullDay": "35"
     },
     {
-        "rentalImg": "images/honda-dio.webp",
         "rentalType": "Honda Dio Scooter",
         "maxPersons": "2",
         "reserveHalfDay":  "30",
@@ -19,7 +17,6 @@
         "walkInFullDay": "45"
     },
     {
-        "rentalImg": "images/honda-pcx150.webp",
         "rentalType": "Honda PCX150 Scooter",
         "maxPersons": "2",
         "reserveHalfDay":  "40",
@@ -28,7 +25,6 @@
         "walkInFullDay": "55"
     },
     {
-        "rentalImg": "images/honda-pioneer1000.webp",
         "rentalType": "Honda Pioneer ATV",
         "maxPersons": "4",
         "reserveHalfDay":  "50",
@@ -37,7 +33,6 @@
         "walkInFullDay": "80"
     },
     {
-        "rentalImg": "images/jeep-wrangler4.webp",
         "rentalType": "Jeep Wrangler - 4 door with a/c",
         "maxPersons": "5",
         "reserveHalfDay":  "70",
@@ -46,7 +41,6 @@
         "walkInFullDay": "125"
     },
     {
-        "rentalImg": "images/jeep_wrangler2.webp",
         "rentalType": "Jeep Wrangler - 2 door",
         "maxPersons": "4",
         "reserveHalfDay":  "60",

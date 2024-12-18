@@ -1,22 +1,52 @@
 // Rental info Long pst
 
 const longRentalData = 'https://catsrun.github.io/wdd230/scooters/data/rentals.json';
-const scootersImg = document.querySelector('.scooter-img');
+const scootersImg = 'scooters/scripts/rental-long.js';
+// const scootersImg1 = document.querySelector('.scooter-img1');
+// const scootersImg2 = document.querySelector('.scooter-img2');
+// const scootersImg3 = document.querySelector('.scooter-img3');
+// const scootersImg4 = document.querySelector('.scooter-img4');
+// const scootersImg5 = document.querySelector('.scooter-img5');
+// const scootersImg6 = document.querySelector('.scooter-img6');
+
 
 const displayRentalsLong = (data) => {
     // console.log(data.rental);
       data.rental.forEach((rental) => {
 
+
+
+        
         // portrait.setAttribute('src', rental.imageurl);
         // scootersImg.setAttribute('src', rental.imageurl)
+        // scootersImg.setAttribute('loading', 'lazy');
+        // scootersImg.setAttribute('width', '250');
 
+        // scootersImg2.setAttribute('src', rental.imageurl)
+        // scootersImg2.setAttribute('loading', 'lazy');
+        // scootersImg2.setAttribute('width', '250');
+
+        // scootersImg3.setAttribute('src', rental.imageurl)
+        // scootersImg3.setAttribute('loading', 'lazy');
+        // scootersImg3.setAttribute('width', '250');
+
+        // scootersImg4.setAttribute('src', rental.imageurl)
+        // scootersImg4.setAttribute('loading', 'lazy');
+        // scootersImg4.setAttribute('width', '250');
+
+        // scootersImg5.setAttribute('src', rental.imageurl)
+        // scootersImg5.setAttribute('loading', 'lazy');
+        // scootersImg5.setAttribute('width', '250');
+
+        // scootersImg6.setAttribute('src', rental.imageurl)
+        // scootersImg6.setAttribute('loading', 'lazy');
+        // scootersImg6.setAttribute('width', '250');
 
         // --------rentals page---------- longcards
         let cardLong = document.createElement('section');
         let cardTable = document.createElement('table');
         // do I need a caption?
         let rentalType = document.createElement('th');
-
         let maxPersons = document.createElement('caption');        
         let reserveHalfDay = document.createElement('td'); 
         let reserveFullDay = document.createElement('td');
@@ -29,11 +59,14 @@ const displayRentalsLong = (data) => {
         let trTablRow2 = document.createElement('tr');
         let trTablRow3 = document.createElement('tr');
         let trTablRow4 = document.createElement('tr');
+        let trTablRow5 = document.createElement('tr');
 
         let thHalfDay = document.createElement('th');
         let thFullDay = document.createElement('th');
         let thReserved = document.createElement('th');
         let thWalkin = document.createElement('th');
+
+        let pic = document.createElement('picture');
 
         // --------pulling data from JSON file rentals.json
         rentalType.textContent = `${rental.rentalType} `;
@@ -48,15 +81,17 @@ const displayRentalsLong = (data) => {
         thReserved.textContent = `Reserved`;
         thWalkin.textContent = `Walk-in`;
         thHalfDay.textContent = `Half-day rental:`;
+        
         thFullDay.textContent = `Full-day rental:`;
+
 
         // ------create table----------
         cardLong.appendChild(cardTable);
-
+        
         // ------table head span 2---------
         theadHead.appendChild(trTablRow);
         trTablRow.appendChild(rentalType); 
-
+        
         // -----table head------
         cardTable.appendChild(theadHead);
         theadHead.appendChild(trTablRow3);
@@ -75,6 +110,16 @@ const displayRentalsLong = (data) => {
         trTablRow2.appendChild(reserveHalfDay); 
         trTablRow2.appendChild(walkInHalfDay);
 
+        // ---------img row 5--------
+        tbodyBody.appendChild(trTablRow5);
+        trTablRow5.appendChild(pic);
+        // trTablRow5.appendChild(scootersImg1);
+        // trTablRow5.appendChild(scootersImg2);
+        // trTablRow5.appendChild(scootersImg3);
+        // trTablRow5.appendChild(scootersImg4);
+        // trTablRow5.appendChild(scootersImg5);
+        // trTablRow5.appendChild(scootersImg6);
+        
         // ------caption---------
         cardTable.appendChild(maxPersons);
         
