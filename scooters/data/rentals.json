@@ -46,7 +46,7 @@
         "walkInFullDay": "125"
     },
     {
-        "rentalImg": "images/jeep_wrangler2.webp",
+        "rentalImg": "images/jeep-wrangler2.webp",
         "rentalType": "Jeep Wrangler - 2 door",
         "maxPersons": "4",
         "reserveHalfDay":  "60",

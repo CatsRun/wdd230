@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scoots: Scooter Rental WDD230 Final Project</title>       
-    <meta name="description" content="WDD 230 Web Frontend Development: Scooter Rental; Final Project">
+    <title>Scoots: Reservations</title>       
+    <meta name="description" content="WDD 230 Web Frontend Development: Scooter Reservations page">
     <meta name="author" content="Angela Murray">
 
     <!-- change this icon *************-->
@@ -41,7 +41,7 @@
         </nav>
     </header>
 
-    <main id="res">
+    <main >
         <h1>Scoots: Reservations</h1>
         <div class="card" >
             <section id="rental">
@@ -88,10 +88,6 @@
                         <label>Date of Rental*<input type="date" name="rentdate"  id="rentdate" required></label>
                         <label>Return date*<input type="date" name="returndate"  id="returndate" required></label>
         
-                        <!-- number of drivers -->
-                        <!--  total mun of riders, including drivers -->
-                        <!-- select vehicles, rental type -->
-
                         <!-- this is populated from reservation.js, the 'option' here is teh placeholder for teh js because without it html checker was throwing an error  -->
                         <!-- - What will you ride? -->
                         <label id="rental-name">Rental Type *<select name="rentals-name" id="rentals-name" size="1" required><option value="" >Choose one</option></select> </label>
@@ -103,7 +99,7 @@
 
                                 
                     <button type="submit" id="joinbutton">Start Your Adventue</button>
-            <!-- </div> --><p class="form-subtext">* indicates required fields</p>
+            <p class="form-subtext">* indicates required fields</p>
             </form>
            </section> 
         </div>            

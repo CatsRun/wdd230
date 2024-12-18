@@ -132,19 +132,13 @@ section {
 
  .island-pic{
     display: grid;
-    /* grid-template-columns: 1fr ; */
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    margin: 1rem;
-    padding: 1rem;
-    grid-gap: 1rem;
+    /* margin: 1rem; */
+    /* padding: 1rem; */
+    /* grid-gap: 1rem; */
     border-radius: 6px;
-    /* position: relative; */
     height: auto;
     width: 100%;
-    /* max-width: 200; */
-    
-
-    
 }
 
 .island-pic img{
@@ -153,6 +147,19 @@ section {
     /* background-color: #555; */
 }
 
+.island-pic p{
+    /* border-radius: 6px; */
+    padding: 1rem;
+    max-width: 320px;
+    /* background-color: #555; */
+}
+
+.island-pic p::first-line {
+    line-height: 2.5rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
 /* ------------rentals--------- */
 .cards{
     display: grid;
@@ -167,6 +174,15 @@ section {
     text-align: center;
 }
 
+#socialmedia{
+    position: fixed;
+    display:inline-block;
+    display: grid;
+    /* width: ; */
+    grid-template-columns: 1fr;
+    top: 62%;
+    right: 5%;
+  }
 /* --------------form------------ */
 .form {
     text-align: left;
