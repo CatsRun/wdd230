@@ -1,7 +1,7 @@
 // Rental info Long pst
 
-const longRentalData = 'https://catsrun.github.io/wdd230/scooters/data/rentals.json';
-const scootersImg = 'scooters/scripts/rental-long.js';
+// const longRentalData = 'https://catsrun.github.io/wdd230/scooters/data/rentals.json';
+const longRentalData = 'data/rentals.json';
 // const scootersImg1 = document.querySelector('.scooter-img1');
 // const scootersImg2 = document.querySelector('.scooter-img2');
 // const scootersImg3 = document.querySelector('.scooter-img3');
@@ -66,7 +66,14 @@ const displayRentalsLong = (data) => {
         let thReserved = document.createElement('th');
         let thWalkin = document.createElement('th');
 
-        let pic = document.createElement('picture');
+        // images of rentals
+        let pic = document.createElement('img');
+        pic.setAttribute('src', rental.rentalImg)
+        pic.setAttribute('loading', 'lazy');
+        pic.setAttribute('width', '250');
+        pic.setAttribute('alt', `${rental.rentalType}`);
+        pic.setAttribute('figcaption', `${rental.rentalType}`);
+        // console.log(pic);
 
         // --------pulling data from JSON file rentals.json
         rentalType.textContent = `${rental.rentalType} `;
@@ -112,7 +119,7 @@ const displayRentalsLong = (data) => {
 
         // ---------img row 5--------
         tbodyBody.appendChild(trTablRow5);
-        trTablRow5.appendChild(pic);
+        cardLong.appendChild(pic);
         // trTablRow5.appendChild(scootersImg1);
         // trTablRow5.appendChild(scootersImg2);
         // trTablRow5.appendChild(scootersImg3);
