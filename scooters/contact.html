@@ -45,33 +45,9 @@
     <main>
         <h1>Scoots: Contact Us</h1>
 
-        <section class="card" id="contact-form">
-            <!-- <div id="formmessage"></div> -->
-            
-            <!-- sould the form method be 'get' because we are using Github, or 'post' because there is sensative info? -->
-            <form method="get" action="contact-form.html" class="form" id="user-form">
-                <fieldset>
-                    <legend> Send us a mesage </legend>
-                    <label>First Name* <input type="text" id="firstname" name="firstname" required></label>
-                    <label>Last Name* <input type="text" id="lastname" name="lastname" required></label>
-                    <label>Email* <input type="email" id="email" name="email" title="What is your counrty code?" pattern="[0-9-]+@" required></label>
-                    <!-- <label>Phone Number<input type="tel" name="phone" id="phone" placeholder="123-555-1234" title="no dashes" pattern="[0-9,-]{10,13}"></label>
-                    <label>Country code<input type="number" name="counrty-code" id="counrty-code" placeholder="001" pattern="[0-9]"></label> -->
-                    <!-- <label>Address<input type="text" id="address" name="address" placeholder="Address line 1"></label>
-                    <label>Address<input type="text" id="address" name="address" placeholder="Address line 2"></label> -->
-                    <label>Reservation Number <input type="text" id="resnumber" name="resnumber" ></label>
-                    <label>How can we help?* <textarea name="inquiry " id="inquiry" rows="3" required></textarea></label>
-                        
-                
-                </fieldset>
-                <!-- when choosing what to put on a submit button ask "I want to..." the answer is that you put on the button -->           
-                <button type="submit" id="contactbutton">Send message 📨</button>
-                <!-- <input type="submit" value="Send message 📨"> -->
+        
 
-            </form>
-        </section>
-
-        <div class="card">
+        <div class="card" id="address">
         <section >
             <h2>Scoots: Centro de Cozume</h2>
             <h3>Playa del Carmen-Cozumel Ferry dock in el Centro de Cozume</h3>
@@ -94,14 +70,38 @@
 
             </ul>
         </section>
-    </div>
-    <!-- <div class="card"> -->
-<!-- Playa del Carmen-Cozumel Ferry dock in el Centro de Cozume -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2642.388205772041!2d-86.94677083102553!3d20.51027451397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1734354743640!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-   
-    <!-- near the Terminal Puerta Maya -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2423.595488533726!2d-86.97321644798554!3d20.47770210780842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1734355383039!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <!-- </div> -->
+        </div>
+        <div class="card" id="maps">
+            <!-- Playa del Carmen-Cozumel Ferry dock in el Centro de Cozume -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2642.388205772041!2d-86.94677083102553!3d20.51027451397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1734354743640!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+            <!-- near the Terminal Puerta Maya -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2423.595488533726!2d-86.97321644798554!3d20.47770210780842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1734355383039!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <section class="card" id="contact-form">
+        <!-- <div id="formmessage"></div> -->
+        
+            <form method="get" action="contact-form.html" class="form" id="user-form">
+                <fieldset>
+                    <legend> Send us a mesage </legend>
+                    <label>First Name* <input type="text" id="firstname" name="firstname" required></label>
+                    <label>Last Name* <input type="text" id="lastname" name="lastname" required></label>
+                    <label>Email* <input type="email" id="email" name="email" title="What is your counrty code?" pattern="[0-9-]+@" required></label>
+                    <!-- <label>Phone Number<input type="tel" name="phone" id="phone" placeholder="123-555-1234" title="no dashes" pattern="[0-9,-]{10,13}"></label>
+                    <label>Country code<input type="number" name="counrty-code" id="counrty-code" placeholder="001" pattern="[0-9]"></label> -->
+                    <!-- <label>Address<input type="text" id="address" name="address" placeholder="Address line 1"></label>
+                    <label>Address<input type="text" id="address" name="address" placeholder="Address line 2"></label> -->
+                    <label>Reservation Number <input type="text" id="resnumber" name="resnumber" ></label>
+                    <label>How can we help?* <textarea name="inquiry " id="inquiry" rows="3" required></textarea></label>
+                        
+                
+                </fieldset>
+                <!-- when choosing what to put on a submit button ask "I want to..." the answer is that you put on the button -->           
+                <button type="submit" id="contactbutton">Send message 📨</button>
+                <!-- <input type="submit" value="Send message 📨"> -->
+
+            </form>
+        </section>
     </main>
 
     <footer>

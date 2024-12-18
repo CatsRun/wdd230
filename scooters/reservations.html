@@ -41,31 +41,33 @@
         </nav>
     </header>
 
-    <main>
+    <main id="res">
         <h1>Scoots: Reservations</h1>
-        <div>
-            <section>
+        <div class="card" >
+            <section id="rental">
                 <h2>Rental Agreement</h2>
-                <ul>
-                    <li>$50 security deposit is required to confirm reservations</li>
-                    <li>A valid drivers license is required in hand at the time of rental</li>
-                    <li>No one under the age of 12 years of age are allowed to ride on the scooters</li>
-                    <li>Fuel charge is not included</li>
-                    <li>Unlimited mileage</li>
-                    <li>Liability insurance is included</li>
-                    <li>Damage insurance is available for purchase</li>
-                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals</li>
-                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo</li>
-                    <li>Rentals may be returned to either physical location</li>
+                <ul id="agreement">
+                    <li>$50 security deposit is required to confirm reservations.</li>
+                    <li>A valid drivers license is required in hand at the time of rental.</li>
+                    <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                    <li>Fuel charge is not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is included.</li>
+                    <li>Damage insurance is available for purchase.</li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                    <li>Rentals may be returned to either physical location.</li>
                 </ul>
             </section>
-        </div>
-        <section>
-            <form method="get" action="reservation-form.html">
-            <div class="form" id="res-form">
+        <!-- </div > -->
+            <section id="res-form">
+            <!-- <div class="card"> -->
+            <form method="get" action="reservation-form.html" class="form" id="rform">
+            <!-- <div  > -->
                 <fieldset>
                     <!-- use :root to style legend padding on r and l -->
-                    <legend>Contact Information - Who will be driving?</legend>
+                    <!-- - Who will be driving? -->
+                    <legend>Contact Information</legend>
                         <!-- home state or country*,  -->
                         <!-- cruiseline , if applicable -->
 
@@ -91,19 +93,21 @@
                         <!-- select vehicles, rental type -->
 
                         <!-- this is populated from reservation.js, the 'option' here is teh placeholder for teh js because without it html checker was throwing an error  -->
-                        <label id="rental-name">Rental Type - What will you ride?*<select name="rentals-name" id="rentals-name" size="1" required><option value="" >Choose one</option></select> </label>
+                        <!-- - What will you ride? -->
+                        <label id="rental-name">Rental Type *<select name="rentals-name" id="rentals-name" size="1" required><option value="" >Choose one</option></select> </label>
                         <label>Number of vehicles<input type="number" name="numveh"  id="numveh" value="0" max="10" min="1"></label>                    
-                        <label>Special requests <textarea name="inquiry " id="inquiry" rows="3" placeholder="Drop off at Happy-Days Resort"></textarea></label>
+                        <label>Special requests <textarea name="inquiry " id="inquiry" rows="8" placeholder="Drop off at Happy-Days Resort"></textarea></label>
                         <input type="hidden" name="submition" id="submition">
                     
                     </fieldset>
 
                                 
                     <button type="submit" id="joinbutton">Start Your Adventue</button>
-            </div>
+            <!-- </div> --><p class="form-subtext">* indicates required fields</p>
             </form>
-            <p class="form-subtext">* indicates required fields</p>
-        </section>
+           </section> 
+        </div>            
+        
 
 
 
