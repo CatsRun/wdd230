@@ -27,9 +27,6 @@
 <body>
     <header>
         <nav>
-            <!-- <picture class="hero"> -->
-                <!-- add img of beach -->
-            <!-- </picture> -->
             <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="rentals.html">Rentals</a></li>
@@ -58,26 +55,16 @@
                     <li>Rentals may be returned to either physical location.</li>
                 </ul>
             </section>
-        <!-- </div > -->
             <section id="res-form">
                 <h2>Reservation Form</h2>
-            <!-- <div class="card"> -->
             <form method="get" action="reservation-form.html" class="form" id="rform">
-            <!-- <div  > -->
                 <fieldset>
-                    <!-- use :root to style legend padding on r and l -->
-                    <!-- - Who will be driving? -->
                     <legend>Contact Information</legend>
-                        <!-- home state or country*,  -->
-                        <!-- cruiseline , if applicable -->
 
                         <label>First Name* <input type="text" name="fname"  id="fname" required></label>
                         <label>Last Name* <input type="text" name="lname" id="lname" required></label>
-                        
-                        <!-- <label>Title / Position* <input type="text" name="title" id="title" title="At least 8 letters long. Only letters." pattern="[a-zA-Z ]{7,}" required></label> -->
                         <label>Email* <input type="email" name="email" id="email" placeholder="abc123@acb.com" required></label>
-                        <!-- <label>Mobile Number* <input type="tel" name="moble" id="moble" placeholder="1235551234" title="no dashes" pattern="[0-9,-]{10,13}" required></label> -->
-                        <label>Mobile Number* <input type="tel" name="moble" id="moble" placeholder="1235551234" title="no dashes" pattern="\d{3}-?\d{3}-?\d{4}" required></label>
+                        <label>Mobile Number* <input type="tel" name="moble" id="moble" placeholder="1235551234" title="no dashes" pattern="[0-9,-]{10,13}" required></label>
                         <label>Country code<input type="text" name="councode"  id="councode" pattern="[0-9,]" placeholder="001"></label>
                         <label>Home State or Country <input type="text" name="location" id="location" placeholder="Texas, USA" required></label>
                         <label>Cruise Line<input type="text" name="cruise" id="cruise" placeholder=" Dimond Cruise" ></label>
@@ -90,7 +77,6 @@
                         <label>Return date*<input type="date" name="returndate"  id="returndate" required></label>
         
                         <!-- this is populated from reservation.js, the 'option' here is teh placeholder for teh js because without it html checker was throwing an error  -->
-                        <!-- - What will you ride? -->
                         <label id="rental-name">Rental Type *<select name="rentals-name" id="rentals-name" size="1" required><option value="" >Choose one</option></select> </label>
                         <label>Number of vehicles<input type="number" name="numveh"  id="numveh" value="0" max="10" min="1"></label>                    
                         <label>Special requests <textarea name="inquiry " id="inquiry" rows="8" placeholder="Drop off at Happy-Days Resort"></textarea></label>
@@ -111,7 +97,7 @@
     </main>
 
     <footer>
-        <p>&copy; <span id="currentYear"></span> | Angela Murray | WDD230 Final Project | Last Modified: <span id="lastModified"></span></p>
+        <p>&copy; <span id="currentYear"></span> | Angela Murray | WDD230 Final Project 
         <p> Scoots@info.com | 1-800-555-7324 </p>
         <p><a href="attributions.html">~Attributions~</a> | <a href="contact.html">Contact Us</a></p>
     </footer>
