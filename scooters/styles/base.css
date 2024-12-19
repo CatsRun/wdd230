@@ -149,9 +149,9 @@ section {
     /* background-color: #555; */
 }
 
-#island-p {
+/* #island-p {
     grid-column: 1/3;
-}
+} */
  
 #island-p p{
     /* border-radius: 6px; */
@@ -166,7 +166,9 @@ section {
     font-size: 1.5rem;
     font-weight: 400;
   }
-
+  #island-p a{
+    margin: auto;
+}
 
 /* ------------rentals--------- */
 .cards{

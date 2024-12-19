@@ -76,7 +76,8 @@
                         
                         <!-- <label>Title / Position* <input type="text" name="title" id="title" title="At least 8 letters long. Only letters." pattern="[a-zA-Z ]{7,}" required></label> -->
                         <label>Email* <input type="email" name="email" id="email" placeholder="abc123@acb.com" required></label>
-                        <label>Moble Number* <input type="tel" name="moble" id="moble" placeholder="1235551234" title="no dashes" pattern="[0-9,-]{10,13}" required></label>
+                        <!-- <label>Mobile Number* <input type="tel" name="moble" id="moble" placeholder="1235551234" title="no dashes" pattern="[0-9,-]{10,13}" required></label> -->
+                        <label>Mobile Number* <input type="tel" name="moble" id="moble" placeholder="1235551234" title="no dashes" pattern="\d{3}-?\d{3}-?\d{4}" required></label>
                         <label>Country code<input type="text" name="councode"  id="councode" pattern="[0-9,]" placeholder="001"></label>
                         <label>Home State or Country <input type="text" name="location" id="location" placeholder="Texas, USA" required></label>
                         <label>Cruise Line<input type="text" name="cruise" id="cruise" placeholder=" Dimond Cruise" ></label>
